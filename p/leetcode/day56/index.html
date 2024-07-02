@@ -36,19 +36,19 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Collins's Blog</title>
+  <title>最大子数组和 - Collins's Blog</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="且行且珍惜 - Krysten· Collins - Collins's Blog">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="Collins&#39;s Blog">
+<meta property="og:title" content="最大子数组和">
 <meta property="og:url" content="https://krystencollins.github.io/p/leetcode/day56/index.html">
 <meta property="og:site_name" content="Collins&#39;s Blog">
 <meta property="og:description" content="53. 最大子数组和题目描述：给你一个整数数组 nums ，请你找出一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。 子数组是数组中的一个连续部分。 示例：示例 1： 123输入：nums &#x3D; [-2,1,-3,4,-1,2,1,-5,4]输出：6解释：连续子数组 [4,-1,2,1] 的和最大，为 6 。  示例 2： 12输入：nums &#x3D; [1]输出：1  示例 3： 1">
 <meta property="og:locale">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2025-05-27T16:00:00.000Z">
-<meta property="article:modified_time" content="2024-05-29T07:45:36.663Z">
+<meta property="article:published_time" content="2024-05-27T16:00:00.000Z">
+<meta property="article:modified_time" content="2024-07-02T14:54:58.580Z">
 <meta property="article:author" content="Krysten· Collins">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1794,7 +1794,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/app.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/parallax.js","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/rightMenu.js","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/rightMenus.js","sites":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/sites.js","friends":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/friends.js","contributors":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/contributors.js","search":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1719931170575),
+    lastupdate: new Date(1719932395975),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2594,9 +2594,78 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
     
-      <span hidden itemprop="name headline">
+      <h1 class="title" itemprop="name headline">
+        最大子数组和
+      </h1>
+      <div class='new-meta-box'>
         
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png" class="lazyload" data-srcset="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">Collins</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/leetcode/">leetcode</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/leetcode/" itemprop="url"><span itemprop="name">leetcode</span></a>
       </span>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-05-28T00:00:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：May 28, 2024</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>300 words</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>1 min</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+
+
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
 
@@ -2623,7 +2692,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-<h5 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">##### 分治法</span><br><span class="line"></span><br><span class="line">```C++</span><br></pre></td></tr></table></figure>
+<h5 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 待定</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="分治法"><a href="#分治法" class="headerlink" title="分治法"></a>分治法</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 待定</span></span><br></pre></td></tr></table></figure>
 
 
 
@@ -2646,7 +2719,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
           <div class="copyright license">
-            <div class="license-title"></div>
+            <div class="license-title">最大子数组和</div>
             <div class="license-link"><a href="https://krystencollins.github.io/p/leetcode/day56/">https://krystencollins.github.io/p/leetcode/day56/</a>
             </div>
             <div class="license-meta">
@@ -2656,12 +2729,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               </div>
               <div class="license-meta-item">
                 <div class="license-meta-title">Posted on</div>
-                <div class="license-meta-text">May 28, 2025</div>
+                <div class="license-meta-text">May 28, 2024</div>
               </div>
               
               <div class="license-meta-item">
                 <div class="license-meta-title">Update</div>
-                <div class="license-meta-text">May 29, 2024</div>
+                <div class="license-meta-text">Jul 2, 2024</div>
               </div>
               
               
@@ -2686,10 +2759,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-05-29T15:45:36+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-07-02T22:54:58+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：May 29, 2024</p>
+    <p>更新于：Jul 2, 2024</p>
   </a>
 </div>
 
@@ -2735,11 +2808,26 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
+        <a class='prev' href='/p/leetcode/day57/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>May 28, 2024</p>
+          <p class='content'>121. 买卖股票的最佳时机题目描述：给定一个数组 prices ，它的第 i 个元素 prices[i] 表示一支给定股票第 i 天的价格。
+你只能选择 某一天 买入这只股票，并选择在 未来的...</p>
+        </a>
       
-        <a class='next' href='/p/leetcode/day75/'>
-          <p class='title'>目标和<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>494. 目标和题目描述：给你一个非负整数数组 nums 和一个整数 target 。
-向数组中的每个整数前添加 &#39;+&#39; 或 &#39;-&#39; ，然后串联起所有整数，可以构...</p>
+      
+        <a class='next' href='/p/leetcode/day55/'>
+          <p class='title'>May 28, 2024<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>贪心算法解题步骤：
+
+将问题分解为若干个子问题
+找出适合的贪心策略
+求解每一个子问题的最优解
+将局部最优解推叠成全局最优解
+
+
+想清楚 局部最优是什么？如何推出全局最优？
+
+455. 分发饼干题...</p>
         </a>
       
     </div>
@@ -2797,7 +2885,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#53-%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C"><span class="toc-text">53. 最大子数组和</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0%EF%BC%9A"><span class="toc-text">题目描述：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B%EF%BC%9A"><span class="toc-text">示例：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8F%90%E7%A4%BA%EF%BC%9A"><span class="toc-text">提示：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%98%E8%A7%A3%EF%BC%9A"><span class="toc-text">题解：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95"><span class="toc-text">贪心算法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92"><span class="toc-text">动态规划</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#53-%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84%E5%92%8C"><span class="toc-text">53. 最大子数组和</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0%EF%BC%9A"><span class="toc-text">题目描述：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B%EF%BC%9A"><span class="toc-text">示例：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8F%90%E7%A4%BA%EF%BC%9A"><span class="toc-text">提示：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%98%E8%A7%A3%EF%BC%9A"><span class="toc-text">题解：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95"><span class="toc-text">贪心算法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92"><span class="toc-text">动态规划</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%88%86%E6%B2%BB%E6%B3%95"><span class="toc-text">分治法</span></a></li></ol></li></ol></li></ol>
     </div>
   </section>
 
@@ -2853,7 +2941,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3866,7 +3954,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Collins's Blog","url":"https://krystencollins.github.io/","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/","sameAs":["https://github.com/volantis-x"],"description":"且行且珍惜"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://krystencollins.github.io/","name":"Collins's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://krystencollins.github.io/p/leetcode/day56/"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Collins's Blog","url":"https://krystencollins.github.io/","keywords":null,"description":"且行且珍惜","author":{"@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/","description":"且行且珍惜"},"publisher":{"@type":"Organization","name":"Collins's Blog","url":"https://krystencollins.github.io/","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://krystencollins.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"且行且珍惜","inLanguage":"-zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://krystencollins.github.io/p/leetcode/day56/"},"author":{"@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/"},"publisher":{"@type":"Organization","name":"Collins's Blog","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},"url":"https://krystencollins.github.io/p/leetcode/day56/","wordCount":0,"datePublished":"2025-05-27T16:00:00.000Z","dateModified":"2024-05-29T07:45:36.663Z","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Collins's Blog","url":"https://krystencollins.github.io/","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/","sameAs":["https://github.com/volantis-x"],"description":"且行且珍惜"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://krystencollins.github.io/","name":"Collins's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://krystencollins.github.io/categories/leetcode/","name":"leetcode"}},{"@type":"ListItem","position":3,"item":{"@id":"https://krystencollins.github.io/p/leetcode/day56/","name":"最大子数组和"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Collins's Blog","url":"https://krystencollins.github.io/","keywords":null,"description":"且行且珍惜","author":{"@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/","description":"且行且珍惜"},"publisher":{"@type":"Organization","name":"Collins's Blog","url":"https://krystencollins.github.io/","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://krystencollins.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"最大子数组和","description":"且行且珍惜","inLanguage":"-zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://krystencollins.github.io/p/leetcode/day56/"},"author":{"@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/"},"publisher":{"@type":"Organization","name":"Collins's Blog","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},"url":"https://krystencollins.github.io/p/leetcode/day56/","wordCount":0,"datePublished":"2024-05-27T16:00:00.000Z","dateModified":"2024-07-02T14:54:58.580Z","articleSection":"leetcode","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}}]</script>
 
 
 

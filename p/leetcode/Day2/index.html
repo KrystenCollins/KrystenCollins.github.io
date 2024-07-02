@@ -36,19 +36,19 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Collins's Blog</title>
+  <title>在排序数组中查找元素的第一个和最后一个位置 - Collins's Blog</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="且行且珍惜 - Krysten· Collins - Collins's Blog">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="Collins&#39;s Blog">
-<meta property="og:url" content="https://krystencollins.github.io/p/leetcode/Day2/index.html">
+<meta property="og:title" content="在排序数组中查找元素的第一个和最后一个位置">
+<meta property="og:url" content="https://krystencollins.github.io/p/leetcode/day2/index.html">
 <meta property="og:site_name" content="Collins&#39;s Blog">
 <meta property="og:description" content="34. 在排序数组中查找元素的第一个和最后一个位置题目描述：给你一个按照非递减顺序排列的整数数组 nums，和一个目标值 target。请你找出给定目标值在数组中的开始位置和结束位置。 如果数组中不存在目标值 target，返回 [-1, -1]。 你必须设计并实现时间复杂度为 O(log n) 的算法解决此问题。 示例：示例 1： 12输入：nums &#x3D; [5,7,7,8,8,10], targ">
 <meta property="og:locale">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2024-03-28T14:03:02.691Z">
-<meta property="article:modified_time" content="2024-03-28T14:29:44.907Z">
+<meta property="article:published_time" content="2024-03-27T16:00:00.000Z">
+<meta property="article:modified_time" content="2024-07-02T14:55:37.404Z">
 <meta property="article:author" content="Krysten· Collins">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1794,7 +1794,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/app.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/parallax.js","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/rightMenu.js","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/rightMenus.js","sites":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/sites.js","friends":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/friends.js","contributors":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/contributors.js","search":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1719931170575),
+    lastupdate: new Date(1719932395975),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2574,7 +2574,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/Day2/">
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day2/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Collins's Blog">
   </span>
@@ -2594,9 +2594,78 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
     
-      <span hidden itemprop="name headline">
+      <h1 class="title" itemprop="name headline">
+        在排序数组中查找元素的第一个和最后一个位置
+      </h1>
+      <div class='new-meta-box'>
         
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png" class="lazyload" data-srcset="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">Collins</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/leetcode/">leetcode</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/leetcode/" itemprop="url"><span itemprop="name">leetcode</span></a>
       </span>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-03-28T00:00:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Mar 28, 2024</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>552 words</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>2 min</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+
+
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
 
@@ -2651,8 +2720,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
           <div class="copyright license">
-            <div class="license-title"></div>
-            <div class="license-link"><a href="https://krystencollins.github.io/p/leetcode/Day2/">https://krystencollins.github.io/p/leetcode/Day2/</a>
+            <div class="license-title">在排序数组中查找元素的第一个和最后一个位置</div>
+            <div class="license-link"><a href="https://krystencollins.github.io/p/leetcode/day2/">https://krystencollins.github.io/p/leetcode/day2/</a>
             </div>
             <div class="license-meta">
               <div class="license-meta-item">
@@ -2662,6 +2731,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               <div class="license-meta-item">
                 <div class="license-meta-title">Posted on</div>
                 <div class="license-meta-text">Mar 28, 2024</div>
+              </div>
+              
+              <div class="license-meta-item">
+                <div class="license-meta-title">Update</div>
+                <div class="license-meta-text">Jul 2, 2024</div>
               </div>
               
               
@@ -2686,10 +2760,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-03-28T22:29:44+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-07-02T22:55:37+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Mar 28, 2024</p>
+    <p>更新于：Jul 2, 2024</p>
   </a>
 </div>
 
@@ -2735,16 +2809,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/p/leetcode/Day3/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Mar 28, 2024</p>
+        <a class='prev' href='/p/leetcode/day3/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>x的平方根</p>
           <p class='content'>69. x 的平方根 题目描述：给你一个非负整数 x ，计算并返回 x 的 算术平方根 。
 由于返回类型是整数，结果只保留 整数部分 ，小数部分将被 舍去 。
 注意：不允许使用任何内置指数函数和...</p>
         </a>
       
       
-        <a class='next' href='/p/leetcode/Day1/'>
-          <p class='title'>Mar 28, 2024<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+        <a class='next' href='/p/leetcode/day1/'>
+          <p class='title'>二分查找<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>704. 二分查找题目描述：给定一个 n 个元素有序的（升序）整型数组 nums 和一个目标值 target ，写一个函数搜索 nums 中的 target，如果目标值存在返回下标，否则返回 -...</p>
         </a>
       
@@ -2761,7 +2835,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/p/leetcode/Day2/index.html#comments">
+      <meta itemprop="discussionUrl" content="/p/leetcode/day2/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2859,7 +2933,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3872,7 +3946,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Collins's Blog","url":"https://krystencollins.github.io/","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/","sameAs":["https://github.com/volantis-x"],"description":"且行且珍惜"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://krystencollins.github.io/","name":"Collins's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://krystencollins.github.io/p/leetcode/Day2/"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Collins's Blog","url":"https://krystencollins.github.io/","keywords":null,"description":"且行且珍惜","author":{"@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/","description":"且行且珍惜"},"publisher":{"@type":"Organization","name":"Collins's Blog","url":"https://krystencollins.github.io/","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://krystencollins.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"且行且珍惜","inLanguage":"-zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://krystencollins.github.io/p/leetcode/Day2/"},"author":{"@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/"},"publisher":{"@type":"Organization","name":"Collins's Blog","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},"url":"https://krystencollins.github.io/p/leetcode/Day2/","wordCount":0,"datePublished":"2024-03-28T14:03:02.691Z","dateModified":"2024-03-28T14:29:44.907Z","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Collins's Blog","url":"https://krystencollins.github.io/","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/","sameAs":["https://github.com/volantis-x"],"description":"且行且珍惜"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://krystencollins.github.io/","name":"Collins's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://krystencollins.github.io/categories/leetcode/","name":"leetcode"}},{"@type":"ListItem","position":3,"item":{"@id":"https://krystencollins.github.io/p/leetcode/day2/","name":"在排序数组中查找元素的第一个和最后一个位置"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Collins's Blog","url":"https://krystencollins.github.io/","keywords":null,"description":"且行且珍惜","author":{"@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/","description":"且行且珍惜"},"publisher":{"@type":"Organization","name":"Collins's Blog","url":"https://krystencollins.github.io/","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://krystencollins.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"在排序数组中查找元素的第一个和最后一个位置","description":"且行且珍惜","inLanguage":"-zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://krystencollins.github.io/p/leetcode/day2/"},"author":{"@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/"},"publisher":{"@type":"Organization","name":"Collins's Blog","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},"url":"https://krystencollins.github.io/p/leetcode/day2/","wordCount":0,"datePublished":"2024-03-27T16:00:00.000Z","dateModified":"2024-07-02T14:55:37.404Z","articleSection":"leetcode","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}}]</script>
 
 
 

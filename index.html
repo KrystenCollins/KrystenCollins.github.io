@@ -1745,9 +1745,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
-        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
+        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
+        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>Learn more ></strong></a>`+
     '</div>');
 </script>
 
@@ -1775,9 +1775,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
-        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
+        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
+        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
     </div>
 </noscript>
 
@@ -1792,7 +1792,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/app.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/parallax.js","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/rightMenu.js","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/rightMenus.js","sites":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/sites.js","friends":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/friends.js","contributors":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/contributors.js","search":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1719977151509),
+    lastupdate: new Date(1719994788209),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2739,9 +2739,162 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day77/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Collins's Blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Collins's Blog">
+    <meta itemprop="description" content="且行且珍惜">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/p/leetcode/day77/"  itemprop="url">
+        完全背包
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        完全背包理论基础
+携带研究材料题目描述：小明是一位科学家，他需要参加一场重要的国际科学大会，以展示自己的最新研究成果。他需要带一些研究材料，但是他的行李箱空间有限。这些研究材料包括实验设备、文献资料和实验样本等等，它们各自占据不同的重量，并且具有不同的价值。
+小明的行李箱所能承担的总重量为 N，问小明应该如何抉择，才能携带最大价值的研究材料，每种研究材料可以选择无数次，并且可以重复选择。
+示...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+            <meta itemprop="name" content="Collins">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-07-03T00:00:00+08:00">2024-07-03</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/leetcode/">leetcode</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/leetcode/" itemprop="url"><span itemprop="name">leetcode</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/p/leetcode/day77/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day76/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Collins's Blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Collins's Blog">
+    <meta itemprop="description" content="且行且珍惜">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/p/leetcode/day76/"  itemprop="url">
+        一和零
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        474. 一和零题目描述：给你一个二进制字符串数组 strs 和两个整数 m 和 n 。
+请你找出并返回 strs 的最大子集的长度，该子集中 最多 有 m 个 0 和 n 个 1 。
+如果 x 的所有元素也是 y 的元素，集合 x 是集合 y 的 子集 。
+示例：示例 1：
+1234输入：strs = [&quot;10&quot;, &quot;0001&quot;, &quot;111...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+            <meta itemprop="name" content="Collins">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-07-02T00:00:00+08:00">2024-07-02</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/leetcode/">leetcode</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/leetcode/" itemprop="url"><span itemprop="name">leetcode</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/p/leetcode/day76/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -2797,7 +2950,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day75/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -2865,7 +3018,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day74/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -2931,7 +3084,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day73/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -3004,7 +3157,7 @@ dp[i][j]表示从下标为0~i的物品里任意取，放进容量为j的背包�
       
         <div>
           <a class='readmore' href='/p/leetcode/day72/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -3073,7 +3226,7 @@ dp[i][j]表示从下标为0~i的物品里任意取，放进容量为j的背包�
       
         <div>
           <a class='readmore' href='/p/leetcode/day71/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -3144,7 +3297,7 @@ dp[i][j]表示从下标为0~i的物品里任意取，放进容量为j的背包�
       
         <div>
           <a class='readmore' href='/p/leetcode/day70/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -3217,7 +3370,7 @@ dp数组如何初始化
       
         <div>
           <a class='readmore' href='/p/leetcode/day69/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -3292,146 +3445,7 @@ dp数组如何初始化
       
         <div>
           <a class='readmore' href='/p/leetcode/day68/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day67/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Collins's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Collins's Blog">
-    <meta itemprop="description" content="且行且珍惜">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day67/"  itemprop="url">
-        Jun 10, 2024
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        968. 监控二叉树题目描述：给定一个二叉树，我们在树的节点上安装摄像头。
-节点上的每个摄影头都可以监视其父对象、自身及其直接子对象。
-计算监控树的所有节点所需的最小摄像头数量。
-示例：示例 1：
-
-123输入：[0,0,null,0,0]输出：1解释：如图所示，一台摄像头足以监控所有节点。
-
-示例 2：
-
-123输入：[0,0,null,0,null,0,null,null,0]输出：2解...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-            <meta itemprop="name" content="Collins">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-06-10T00:00:00+08:00">2024-06-10</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/p/leetcode/day67/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day66/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Collins's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Collins's Blog">
-    <meta itemprop="description" content="且行且珍惜">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day66/"  itemprop="url">
-        Jun 9, 2024
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        2405. 子字符串的最优划分题目描述：给你一个字符串 s ，请你将该字符串划分成一个或多个 子字符串 ，并满足每个子字符串中的字符都是 唯一 的。也就是说，在单个子字符串中，字母的出现次数都不超过 一次 。
-满足题目要求的情况下，返回 最少 需要划分多少个子字符串。
-注意，划分后，原字符串中的每个字符都应该恰好属于一个子字符串。
-示例：示例 1：
-12345输入：s = &quot;aba...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-            <meta itemprop="name" content="Collins">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-06-09T00:00:00+08:00">2024-06-09</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/p/leetcode/day66/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -3456,7 +3470,7 @@ dp数组如何初始化
         
           <a class="next" rel="next" href="/page/2/">
             <section class="post next white-box shadow">
-              &nbsp;下一页&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              &nbsp;Next&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
             </section>
           </a>
         
@@ -3564,7 +3578,7 @@ dp数组如何初始化
           <li><a class="flat-box"
             title="/categories/leetcode/" href="/categories/leetcode/"
             active-action="action-categoriesleetcode"
-            ><div class='name'>leetcode</div><div class='badge'>(12)</div></a></li>
+            ><div class='name'>leetcode</div><div class='badge'>(14)</div></a></li>
         
       </ul>
     </div>
@@ -3600,7 +3614,7 @@ dp数组如何初始化
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>76 篇</div>
+          <div>78 篇</div>
         </div>
       
 
@@ -3615,7 +3629,7 @@ dp数组如何初始化
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>84.8k 字</div>
+          <div>86.4k 字</div>
         </div>
       
 
@@ -3651,7 +3665,7 @@ dp数组如何初始化
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/p/leetcode/ay12/"><div class="item"><time>2024-07-03</time><span>leetcode</span></div><span>两两交换链表中的节点</span></a></li><li><a class="widget-last" href="/p/leetcode/ay11/"><div class="item"><time>2024-07-03</time><span>leetcode</span></div><span>回文链表</span></a></li><li><a class="widget-last" href="/p/leetcode/ay10/"><div class="item"><time>2024-07-03</time><span>leetcode</span></div><span>反转链表</span></a></li><li><a class="widget-last" href="/p/leetcode/ay9/"><div class="item"><time>2024-07-03</time><span>leetcode</span></div><span>设计链表</span></a></li><li><a class="widget-last" href="/p/leetcode/ay8/"><div class="item"><time>2024-07-03</time><span>leetcode</span></div><span>移除链表元素</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/p/leetcode/day77/"><div class="item"><time>2024-07-03</time><span>leetcode</span></div><span>完全背包</span></a></li><li><a class="widget-last" href="/p/leetcode/day76/"><div class="item"><time>2024-07-03</time><span>leetcode</span></div><span>一和零</span></a></li><li><a class="widget-last" href="/p/leetcode/day12/"><div class="item"><time>2024-07-03</time><span>leetcode</span></div><span>两两交换链表中的节点</span></a></li><li><a class="widget-last" href="/p/leetcode/day11/"><div class="item"><time>2024-07-03</time><span>leetcode</span></div><span>回文链表</span></a></li><li><a class="widget-last" href="/p/leetcode/day10/"><div class="item"><time>2024-07-03</time><span>leetcode</span></div><span>反转链表</span></a></li></ul>
   </div>
 </section>
 
@@ -3766,7 +3780,7 @@ dp数组如何初始化
       
     
       
-        <div><p>博客内容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+        <div><p>Blog content follows the <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
 </div>
       
     
@@ -3778,9 +3792,9 @@ dp数组如何初始化
       
     
       
-        本站使用
+        Use
         <a href="https://github.com/volantis-x/hexo-theme-volantis/#5.8.0" target="_blank" class="codename">Volantis</a>
-        作为主题
+        as theme
       
     
       

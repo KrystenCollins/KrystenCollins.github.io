@@ -1745,9 +1745,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
-        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
+        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
+        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>Learn more ></strong></a>`+
     '</div>');
 </script>
 
@@ -1775,9 +1775,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
-        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
+        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
+        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
     </div>
 </noscript>
 
@@ -1792,7 +1792,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/app.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/parallax.js","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/rightMenu.js","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/rightMenus.js","sites":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/sites.js","friends":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/friends.js","contributors":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/contributors.js","search":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1719977151509),
+    lastupdate: new Date(1719994788209),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2579,6 +2579,145 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day67/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Collins's Blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Collins's Blog">
+    <meta itemprop="description" content="且行且珍惜">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/p/leetcode/day67/"  itemprop="url">
+        Jun 10, 2024
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        968. 监控二叉树题目描述：给定一个二叉树，我们在树的节点上安装摄像头。
+节点上的每个摄影头都可以监视其父对象、自身及其直接子对象。
+计算监控树的所有节点所需的最小摄像头数量。
+示例：示例 1：
+
+123输入：[0,0,null,0,0]输出：1解释：如图所示，一台摄像头足以监控所有节点。
+
+示例 2：
+
+123输入：[0,0,null,0,null,0,null,null,0]输出：2解...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+            <meta itemprop="name" content="Collins">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-06-10T00:00:00+08:00">2024-06-10</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/p/leetcode/day67/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day66/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Collins's Blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Collins's Blog">
+    <meta itemprop="description" content="且行且珍惜">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/p/leetcode/day66/"  itemprop="url">
+        Jun 9, 2024
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        2405. 子字符串的最优划分题目描述：给你一个字符串 s ，请你将该字符串划分成一个或多个 子字符串 ，并满足每个子字符串中的字符都是 唯一 的。也就是说，在单个子字符串中，字母的出现次数都不超过 一次 。
+满足题目要求的情况下，返回 最少 需要划分多少个子字符串。
+注意，划分后，原字符串中的每个字符都应该恰好属于一个子字符串。
+示例：示例 1：
+12345输入：s = &quot;aba...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+            <meta itemprop="name" content="Collins">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-06-09T00:00:00+08:00">2024-06-09</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/p/leetcode/day66/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
   <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day65/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Collins's Blog">
@@ -2632,7 +2771,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day65/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -2696,7 +2835,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day64/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -2762,7 +2901,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day63/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -2833,7 +2972,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day62/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -2898,7 +3037,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day61/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -2968,7 +3107,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day60/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -3034,7 +3173,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day59/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -3100,153 +3239,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day58/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day57/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Collins's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Collins's Blog">
-    <meta itemprop="description" content="且行且珍惜">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day57/"  itemprop="url">
-        May 29, 2024
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        121. 买卖股票的最佳时机题目描述：给定一个数组 prices ，它的第 i 个元素 prices[i] 表示一支给定股票第 i 天的价格。
-你只能选择 某一天 买入这只股票，并选择在 未来的某一个不同的日子 卖出该股票。设计一个算法来计算你所能获取的最大利润。
-返回你可以从这笔交易中获取的最大利润。如果你不能获取任何利润，返回 0 。
-示例：示例 1：
-1234输入：[7,1,5,3,6...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-            <meta itemprop="name" content="Collins">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-05-29T00:00:00+08:00">2024-05-29</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/p/leetcode/day57/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day56/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Collins's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Collins's Blog">
-    <meta itemprop="description" content="且行且珍惜">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day56/"  itemprop="url">
-        最大子数组和
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        53. 最大子数组和题目描述：给你一个整数数组 nums ，请你找出一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
-子数组是数组中的一个连续部分。
-示例：示例 1：
-123输入：nums = [-2,1,-3,4,-1,2,1,-5,4]输出：6解释：连续子数组 [4,-1,2,1] 的和最大，为 6 。
-
-示例 2：
-12输入：nums = [1]输出：1
-
-示例 3...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-            <meta itemprop="name" content="Collins">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-05-28T00:00:00+08:00">2024-05-28</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/leetcode/">leetcode</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/leetcode/" itemprop="url"><span itemprop="name">leetcode</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/p/leetcode/day56/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -3267,7 +3260,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <a class="prev" rel="prev" href="/">
             <section class="post prev white-box shadow" >
-              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页&nbsp;
+              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>&nbsp;Previous&nbsp;
             </section>
           </a>
         
@@ -3277,7 +3270,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <a class="next" rel="next" href="/page/3/">
             <section class="post next white-box shadow">
-              &nbsp;下一页&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              &nbsp;Next&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
             </section>
           </a>
         
@@ -3385,7 +3378,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <li><a class="flat-box"
             title="/categories/leetcode/" href="/categories/leetcode/"
             active-action="action-categoriesleetcode"
-            ><div class='name'>leetcode</div><div class='badge'>(12)</div></a></li>
+            ><div class='name'>leetcode</div><div class='badge'>(14)</div></a></li>
         
       </ul>
     </div>
@@ -3421,7 +3414,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>76 篇</div>
+          <div>78 篇</div>
         </div>
       
 
@@ -3436,7 +3429,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>84.8k 字</div>
+          <div>86.4k 字</div>
         </div>
       
 
@@ -3472,7 +3465,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/p/leetcode/ay12/"><div class="item"><time>2024-07-03</time><span>leetcode</span></div><span>两两交换链表中的节点</span></a></li><li><a class="widget-last" href="/p/leetcode/ay11/"><div class="item"><time>2024-07-03</time><span>leetcode</span></div><span>回文链表</span></a></li><li><a class="widget-last" href="/p/leetcode/ay10/"><div class="item"><time>2024-07-03</time><span>leetcode</span></div><span>反转链表</span></a></li><li><a class="widget-last" href="/p/leetcode/ay9/"><div class="item"><time>2024-07-03</time><span>leetcode</span></div><span>设计链表</span></a></li><li><a class="widget-last" href="/p/leetcode/ay8/"><div class="item"><time>2024-07-03</time><span>leetcode</span></div><span>移除链表元素</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/p/leetcode/day77/"><div class="item"><time>2024-07-03</time><span>leetcode</span></div><span>完全背包</span></a></li><li><a class="widget-last" href="/p/leetcode/day76/"><div class="item"><time>2024-07-03</time><span>leetcode</span></div><span>一和零</span></a></li><li><a class="widget-last" href="/p/leetcode/day12/"><div class="item"><time>2024-07-03</time><span>leetcode</span></div><span>两两交换链表中的节点</span></a></li><li><a class="widget-last" href="/p/leetcode/day11/"><div class="item"><time>2024-07-03</time><span>leetcode</span></div><span>回文链表</span></a></li><li><a class="widget-last" href="/p/leetcode/day10/"><div class="item"><time>2024-07-03</time><span>leetcode</span></div><span>反转链表</span></a></li></ul>
   </div>
 </section>
 
@@ -3587,7 +3580,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     
       
-        <div><p>博客内容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+        <div><p>Blog content follows the <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
 </div>
       
     
@@ -3599,9 +3592,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     
       
-        本站使用
+        Use
         <a href="https://github.com/volantis-x/hexo-theme-volantis/#5.8.0" target="_blank" class="codename">Volantis</a>
-        作为主题
+        as theme
       
     
       

@@ -1745,9 +1745,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
-        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>Learn more ></strong></a>`+
+        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
+        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
     '</div>');
 </script>
 
@@ -1775,9 +1775,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
-        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
+        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
+        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
     </div>
 </noscript>
 
@@ -1792,7 +1792,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/app.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/parallax.js","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/rightMenu.js","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/rightMenus.js","sites":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/sites.js","friends":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/friends.js","contributors":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/contributors.js","search":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1720276981432),
+    lastupdate: new Date(1721793584313),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2579,7 +2579,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day70/">
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day82/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Collins's Blog">
   </span>
@@ -2597,23 +2597,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day70/"  itemprop="url">
-        Jun 13, 2024
+      <a href="/p/leetcode/day82/"  itemprop="url">
+        分割字符串II
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        62. 不同路径题目描述：一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为 “Start” ）。
-机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角（在下图中标记为 “Finish” ）。
-问总共有多少条不同的路径？
+        132. 分割回文串 II题目描述：给你一个字符串 s，请你将 s 分割成一些子串，使每个子串都是回文串。
+返回符合要求的 最少分割次数 。
 示例：示例 1：
-
-12输入：m = 3, n = 7输出：28
+123输入：s = &quot;aab&quot;输出：1解释：只需一次分割就可将 s 分割成 [&quot;aa&quot;,&quot;b&quot;] 这样两个回文子串。
 
 示例 2：
-1234567输入：m = 3, n = 2输出：3解释：从左上...
+12输入：s = &quot;a&quot...
       
     
   </div>
@@ -2629,13 +2627,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             <meta itemprop="url" content="/">
           </span>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-06-13T00:00:00+08:00">2024-06-13</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-07-09T00:00:00+08:00">2024-07-09</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/leetcode/">leetcode</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/leetcode/" itemprop="url"><span itemprop="name">leetcode</span></a>
+            </span>
+          
         
       </div>
       
         <div>
-          <a class='readmore' href='/p/leetcode/day70/' itemprop="url">
-            Read More
+          <a class='readmore' href='/p/leetcode/day82/' itemprop="url">
+            阅读全文
           </a>
         </div>
       
@@ -2650,7 +2656,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day69/">
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day81/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Collins's Blog">
   </span>
@@ -2668,172 +2674,95 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day69/"  itemprop="url">
-        Jun 12, 2024
+      <a href="/p/leetcode/day81/"  itemprop="url">
+        单词拆分
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        动态规划步骤：
-
-确定dp数组，以及下标的含义
-确定递推公式
-dp数组如何初始化
-确定遍历顺序
-举例推导dp数组
-
-递推公式决定了dp数组如何初始化
-如何debug？把dp数组打印出来，看看究竟是不是按照自己思路推导的
-509. 斐波那契数题目描述：斐波那契数 （通常用 F(n) 表示）形成的序列称为 斐波那契数列 。该数列由 0 和 1 开始，后面的每一项数字都是前面两项数字的和。也就是：...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-            <meta itemprop="name" content="Collins">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-06-12T00:00:00+08:00">2024-06-12</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/p/leetcode/day69/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day68/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Collins's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Collins's Blog">
-    <meta itemprop="description" content="且行且珍惜">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day68/"  itemprop="url">
-        Jun 11, 2024
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        738. 单调递增的数字题目描述：当且仅当每个相邻位数上的数字 x 和 y 满足 x &lt;= y 时，我们称这个整数是单调递增的。
-给定一个整数 n ，返回 小于或等于 n 的最大数字，且数字呈 单调递增 。
-示例：示例 1:
-12输入: n = 10输出: 9
-
-示例 2:
-12输入: n = 1234输出: 1234
-
-示例 3:
-12输入: n = 332输出: 299
-
-提示:
-...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-            <meta itemprop="name" content="Collins">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-06-11T00:00:00+08:00">2024-06-11</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/p/leetcode/day68/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day67/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Collins's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Collins's Blog">
-    <meta itemprop="description" content="且行且珍惜">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day67/"  itemprop="url">
-        Jun 10, 2024
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        968. 监控二叉树题目描述：给定一个二叉树，我们在树的节点上安装摄像头。
-节点上的每个摄影头都可以监视其父对象、自身及其直接子对象。
-计算监控树的所有节点所需的最小摄像头数量。
+        139. 单词拆分题目描述：给你一个字符串 s 和一个字符串列表 wordDict 作为字典。如果可以利用字典中出现的一个或多个单词拼接出 s 则返回 true。
+注意：不要求字典中出现的单词全部都使用，并且字典中的单词可以重复使用。
 示例：示例 1：
+123输入: s = &quot;leetcode&quot;, wordDict = [&quot;leet&quot;, &quot;c...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+            <meta itemprop="name" content="Collins">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-07-08T00:00:00+08:00">2024-07-08</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/leetcode/">leetcode</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/leetcode/" itemprop="url"><span itemprop="name">leetcode</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/p/leetcode/day81/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
 
-123输入：[0,0,null,0,0]输出：1解释：如图所示，一台摄像头足以监控所有节点。
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day80/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Collins's Blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Collins's Blog">
+    <meta itemprop="description" content="且行且珍惜">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/p/leetcode/day80/"  itemprop="url">
+        完全平方数
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        279. 完全平方数题目描述：给你一个整数 n ，返回 和为 n 的完全平方数的最少数量 。
+完全平方数 是一个整数，其值等于另一个整数的平方；换句话说，其值等于一个整数自乘的积。例如，1、4、9 和 16 都是完全平方数，而 3 和 11 不是。
+示例：示例 1：
+123输入：n = 12输出：3 解释：12 = 4 + 4 + 4
 
 示例 2：
-
-123输入：[0,0,null,0,null,0,null,null,0]输出：2解...
+123输入：n = 13输出：2解释：13...
       
     
   </div>
@@ -2849,13 +2778,21 @@ dp数组如何初始化
             <meta itemprop="url" content="/">
           </span>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-06-10T00:00:00+08:00">2024-06-10</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-07-06T00:00:00+08:00">2024-07-06</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/leetcode/">leetcode</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/leetcode/" itemprop="url"><span itemprop="name">leetcode</span></a>
+            </span>
+          
         
       </div>
       
         <div>
-          <a class='readmore' href='/p/leetcode/day67/' itemprop="url">
-            Read More
+          <a class='readmore' href='/p/leetcode/day80/' itemprop="url">
+            阅读全文
           </a>
         </div>
       
@@ -2870,7 +2807,7 @@ dp数组如何初始化
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day66/">
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day79/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Collins's Blog">
   </span>
@@ -2888,19 +2825,19 @@ dp数组如何初始化
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day66/"  itemprop="url">
-        Jun 9, 2024
+      <a href="/p/leetcode/day79/"  itemprop="url">
+        零钱兑换
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        2405. 子字符串的最优划分题目描述：给你一个字符串 s ，请你将该字符串划分成一个或多个 子字符串 ，并满足每个子字符串中的字符都是 唯一 的。也就是说，在单个子字符串中，字母的出现次数都不超过 一次 。
-满足题目要求的情况下，返回 最少 需要划分多少个子字符串。
-注意，划分后，原字符串中的每个字符都应该恰好属于一个子字符串。
+        322. 零钱兑换题目描述：给你一个整数数组 coins ，表示不同面额的硬币；以及一个整数 amount ，表示总金额。
+计算并返回可以凑成总金额所需的 最少的硬币个数 。如果没有任何一种硬币组合能组成总金额，返回 -1 。
+你可以认为每种硬币的数量是无限的。
 示例：示例 1：
-12345输入：s = &quot;aba...
+123输入：coins = [1, 2, 5], amount = 11输出：3 解释：11 = 5 + 5 +...
       
     
   </div>
@@ -2916,13 +2853,21 @@ dp数组如何初始化
             <meta itemprop="url" content="/">
           </span>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-06-09T00:00:00+08:00">2024-06-09</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-07-05T00:00:00+08:00">2024-07-05</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/leetcode/">leetcode</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/leetcode/" itemprop="url"><span itemprop="name">leetcode</span></a>
+            </span>
+          
         
       </div>
       
         <div>
-          <a class='readmore' href='/p/leetcode/day66/' itemprop="url">
-            Read More
+          <a class='readmore' href='/p/leetcode/day79/' itemprop="url">
+            阅读全文
           </a>
         </div>
       
@@ -2937,7 +2882,7 @@ dp数组如何初始化
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day65/">
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day78/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Collins's Blog">
   </span>
@@ -2955,221 +2900,20 @@ dp数组如何初始化
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day65/"  itemprop="url">
-        Jun 8, 2024
+      <a href="/p/leetcode/day78/"  itemprop="url">
+        零钱兑换II
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        435. 无重叠区间题目描述：给定一个区间的集合 intervals ，其中 intervals[i] = [starti, endi] 。返回 需要移除区间的最小数量，使剩余区间互不重叠 。
-示例：示例 1:
-123输入: intervals = [[1,2],[2,3],[3,4],[1,3]]输出: 1解释: 移除 [1,3] 后，剩下的区间没有重叠。
-
-示例 2:
-123输入: in...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-            <meta itemprop="name" content="Collins">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-06-08T00:00:00+08:00">2024-06-08</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/p/leetcode/day65/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day64/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Collins's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Collins's Blog">
-    <meta itemprop="description" content="且行且珍惜">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day64/"  itemprop="url">
-        Jun 7, 2024
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        406. 根据身高重建队列题目描述：假设有打乱顺序的一群人站成一个队列，数组 people 表示队列中一些人的属性（不一定按顺序）。每个 people[i] = [hi, ki] 表示第 i 个人的身高为 hi ，前面 正好 有 ki 个身高大于或等于 hi 的人。
-请你重新构造并返回输入数组 people 所表示的队列。返回的队列应该格式化为数组 queue ，其中 queue[j] = ...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-            <meta itemprop="name" content="Collins">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-06-07T00:00:00+08:00">2024-06-07</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/p/leetcode/day64/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day63/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Collins's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Collins's Blog">
-    <meta itemprop="description" content="且行且珍惜">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day63/"  itemprop="url">
-        Jun 6, 2024
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        860. 柠檬水找零题目描述：在柠檬水摊上，每一杯柠檬水的售价为 5 美元。顾客排队购买你的产品，（按账单 bills 支付的顺序）一次购买一杯。
-每位顾客只买一杯柠檬水，然后向你付 5 美元、10 美元或 20 美元。你必须给每个顾客正确找零，也就是说净交易是每位顾客向你支付 5 美元。
-注意，一开始你手头没有任何零钱。
-给你一个整数数组 bills ，其中 bills[i] 是第 i 位...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-            <meta itemprop="name" content="Collins">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-06-06T00:00:00+08:00">2024-06-06</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/p/leetcode/day63/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day62/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Collins's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Collins's Blog">
-    <meta itemprop="description" content="且行且珍惜">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day62/"  itemprop="url">
-        Jun 5, 2024
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        135. 分发糖果题目描述：n 个孩子站成一排。给你一个整数数组 ratings 表示每个孩子的评分。
-你需要按照以下要求，给这些孩子分发糖果：
-
-每个孩子至少分配到 1 个糖果。
-相邻两个孩子评分更高的孩子会获得更多的糖果。
-
-请你给每个孩子分发糖果，计算并返回需要准备的 最少糖果数目 。
+        518. 零钱兑换 II题目描述：给你一个整数数组 coins 表示不同面额的硬币，另给一个整数 amount 表示总金额。
+请你计算并返回可以凑成总金额的硬币组合数。如果任何硬币组合都无法凑出总金额，返回 0 。
+假设每一种面额的硬币有无限个。 
+题目数据保证结果符合 32 位带符号整数。
 示例：示例 1：
-123输入：ratings = [1,0,2]输出：5解释：你可以分别给第一个、第...
+1234567输入：amount = 5, coins = [1, 2, 5]输出...
       
     
   </div>
@@ -3185,13 +2929,21 @@ dp数组如何初始化
             <meta itemprop="url" content="/">
           </span>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-06-05T00:00:00+08:00">2024-06-05</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-07-04T00:00:00+08:00">2024-07-04</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/leetcode/">leetcode</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/leetcode/" itemprop="url"><span itemprop="name">leetcode</span></a>
+            </span>
+          
         
       </div>
       
         <div>
-          <a class='readmore' href='/p/leetcode/day62/' itemprop="url">
-            Read More
+          <a class='readmore' href='/p/leetcode/day78/' itemprop="url">
+            阅读全文
           </a>
         </div>
       
@@ -3206,7 +2958,7 @@ dp数组如何初始化
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day61/">
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day77/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Collins's Blog">
   </span>
@@ -3224,17 +2976,18 @@ dp数组如何初始化
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day61/"  itemprop="url">
-        Jun 4, 2024
+      <a href="/p/leetcode/day77/"  itemprop="url">
+        完全背包
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        134. 加油站题目描述：在一条环路上有 n 个加油站，其中第 i 个加油站有汽油 gas[i] 升。
-你有一辆油箱容量无限的的汽车，从第 i 个加油站开往第 i+1 个加油站需要消耗汽油 cost[i] 升。你从其中的一个加油站出发，开始时油箱为空。
-给定两个整数数组 gas 和 cost ，如果你可以按顺序绕环路行驶一周，则返回出发时加油站的编号，否则返回 -1 。如果存在解，则 保证 ...
+        完全背包理论基础
+携带研究材料题目描述：小明是一位科学家，他需要参加一场重要的国际科学大会，以展示自己的最新研究成果。他需要带一些研究材料，但是他的行李箱空间有限。这些研究材料包括实验设备、文献资料和实验样本等等，它们各自占据不同的重量，并且具有不同的价值。
+小明的行李箱所能承担的总重量为 N，问小明应该如何抉择，才能携带最大价值的研究材料，每种研究材料可以选择无数次，并且可以重复选择。
+示...
       
     
   </div>
@@ -3250,13 +3003,296 @@ dp数组如何初始化
             <meta itemprop="url" content="/">
           </span>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-06-04T00:00:00+08:00">2024-06-04</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-07-03T00:00:00+08:00">2024-07-03</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/leetcode/">leetcode</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/leetcode/" itemprop="url"><span itemprop="name">leetcode</span></a>
+            </span>
+          
         
       </div>
       
         <div>
-          <a class='readmore' href='/p/leetcode/day61/' itemprop="url">
-            Read More
+          <a class='readmore' href='/p/leetcode/day77/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day76/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Collins's Blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Collins's Blog">
+    <meta itemprop="description" content="且行且珍惜">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/p/leetcode/day76/"  itemprop="url">
+        一和零
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        474. 一和零题目描述：给你一个二进制字符串数组 strs 和两个整数 m 和 n 。
+请你找出并返回 strs 的最大子集的长度，该子集中 最多 有 m 个 0 和 n 个 1 。
+如果 x 的所有元素也是 y 的元素，集合 x 是集合 y 的 子集 。
+示例：示例 1：
+1234输入：strs = [&quot;10&quot;, &quot;0001&quot;, &quot;111...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+            <meta itemprop="name" content="Collins">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-07-02T00:00:00+08:00">2024-07-02</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/leetcode/">leetcode</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/leetcode/" itemprop="url"><span itemprop="name">leetcode</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/p/leetcode/day76/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day75/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Collins's Blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Collins's Blog">
+    <meta itemprop="description" content="且行且珍惜">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/p/leetcode/day75/"  itemprop="url">
+        目标和
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        494. 目标和题目描述：给你一个非负整数数组 nums 和一个整数 target 。
+向数组中的每个整数前添加 &#39;+&#39; 或 &#39;-&#39; ，然后串联起所有整数，可以构造一个 表达式 ：
+
+例如，nums = [2, 1] ，可以在 2 之前添加 &#39;+&#39; ，在 1 之前添加 &#39;-&#39; ，然后串联起来得到表达式 &quot;+2-1&qu...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+            <meta itemprop="name" content="Collins">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-06-18T00:00:00+08:00">2024-06-18</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/p/leetcode/day75/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day74/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Collins's Blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Collins's Blog">
+    <meta itemprop="description" content="且行且珍惜">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/p/leetcode/day74/"  itemprop="url">
+        分割等和子集
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        416. 分割等和子集题目描述：给你一个 只包含正整数 的 非空 数组 nums 。请你判断是否可以将这个数组分割成两个子集，使得两个子集的元素和相等。
+示例：示例 1：
+123输入：nums = [1,5,11,5]输出：true解释：数组可以分割成 [1, 5, 5] 和 [11] 。
+
+示例 2：
+123输入：nums = [1,2,3,5]输出：false解释：数组不能分割成两个元素...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+            <meta itemprop="name" content="Collins">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-06-17T00:00:00+08:00">2024-06-17</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/p/leetcode/day74/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day73/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Collins's Blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Collins's Blog">
+    <meta itemprop="description" content="且行且珍惜">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/p/leetcode/day73/"  itemprop="url">
+        统计字典序元音字符串的数目
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        1641. 统计字典序元音字符串的数目题目描述：给你一个整数 n，请返回长度为 n 、仅由元音 (a, e, i, o, u) 组成且按 字典序排列 的字符串数量。
+字符串 s 按 字典序排列 需要满足：对于所有有效的 i，s[i] 在字母表中的位置总是与 s[i+1] 相同或在 s[i+1] 之前。
+示例：示例 1：
+123输入：n = 1输出：5解释：仅由元音组成的 5 个字典序字符串为...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+            <meta itemprop="name" content="Collins">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-06-16T00:00:00+08:00">2024-06-16</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/p/leetcode/day73/' itemprop="url">
+            阅读全文
           </a>
         </div>
       
@@ -3277,17 +3313,17 @@ dp数组如何初始化
         
           <a class="prev" rel="prev" href="/">
             <section class="post prev white-box shadow" >
-              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>&nbsp;Previous&nbsp;
+              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页&nbsp;
             </section>
           </a>
         
         <p class="current">
-          2 / 9
+          2 / 10
         </p>
         
           <a class="next" rel="next" href="/page/3/">
             <section class="post next white-box shadow">
-              &nbsp;Next&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              &nbsp;下一页&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
             </section>
           </a>
         
@@ -3390,7 +3426,7 @@ dp数组如何初始化
           <li><a class="flat-box"
             title="/categories/leetcode/" href="/categories/leetcode/"
             active-action="action-categoriesleetcode"
-            ><div class='name'>leetcode</div><div class='badge'>(18)</div></a></li>
+            ><div class='name'>leetcode</div><div class='badge'>(30)</div></a></li>
         
       </ul>
     </div>
@@ -3426,7 +3462,7 @@ dp数组如何初始化
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>81 篇</div>
+          <div>93 篇</div>
         </div>
       
 
@@ -3441,7 +3477,7 @@ dp数组如何初始化
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>89.6k 字</div>
+          <div>100.8k 字</div>
         </div>
       
 
@@ -3452,7 +3488,7 @@ dp数组如何初始化
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2024-07-06 日</div>
+          <div id="last-update-show">2024-07-24 日</div>
         </div>
       
     </div>
@@ -3477,7 +3513,7 @@ dp数组如何初始化
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/p/leetcode/day80/"><div class="item"><time>2024-07-06</time><span>leetcode</span></div><span>完全平方数</span></a></li><li><a class="widget-last" href="/p/leetcode/day79/"><div class="item"><time>2024-07-06</time><span>leetcode</span></div><span>零钱兑换</span></a></li><li><a class="widget-last" href="/p/leetcode/day78/"><div class="item"><time>2024-07-05</time><span>leetcode</span></div><span>零钱兑换II</span></a></li><li><a class="widget-last" href="/p/leetcode/day6/"><div class="item"><time>2024-07-03</time><span>leetcode</span></div><span>水果成篮</span></a></li><li><a class="widget-last" href="/p/leetcode/day77/"><div class="item"><time>2024-07-03</time><span>leetcode</span></div><span>完全背包</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/p/leetcode/day86/"><div class="item"><time>2024-07-23</time></div><span>买卖股票的最佳时机含冷冻期</span></a></li><li><a class="widget-last" href="/p/leetcode/day88/"><div class="item"><time>2024-07-22</time><span>leetcode</span></div><span>最长重复子数组</span></a></li><li><a class="widget-last" href="/p/leetcode/day87/"><div class="item"><time>2024-07-22</time><span>leetcode</span></div><span>最长递增子序列</span></a></li><li><a class="widget-last" href="/p/leetcode/day57/"><div class="item"><time>2024-07-20</time><span>leetcode</span></div><span>买卖股票的最佳时机</span></a></li><li><a class="widget-last" href="/p/leetcode/day85/"><div class="item"><time>2024-07-19</time><span>leetcode</span></div><span>乘积最大子数组</span></a></li></ul>
   </div>
 </section>
 
@@ -3592,7 +3628,7 @@ dp数组如何初始化
       
     
       
-        <div><p>Blog content follows the <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
+        <div><p>博客内容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
 </div>
       
     
@@ -3604,9 +3640,9 @@ dp数组如何初始化
       
     
       
-        Use
+        本站使用
         <a href="https://github.com/volantis-x/hexo-theme-volantis/#5.8.0" target="_blank" class="codename">Volantis</a>
-        as theme
+        作为主题
       
     
       

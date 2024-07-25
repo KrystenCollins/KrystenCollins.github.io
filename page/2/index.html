@@ -1745,9 +1745,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
-        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
+        `<span class="kill-t"><b>抱歉，您的瀏覽器無法訪問本站</b></span><br/>`+
+        `<span class="kill-c">微軟已經於2016年終止了對 Internet Explorer (IE) 10 及更早版本的支持，<br/>繼續使用存在極大的安全隱患，請使用當代主流的瀏覽器進行訪問。</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解詳情 ></strong></a>`+
     '</div>');
 </script>
 
@@ -1775,9 +1775,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
-        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
+        <span class="kill-t"><b>抱歉，您的瀏覽器無法訪問本站</b></span><br/>
+        <span class="kill-c">本頁面需要瀏覽器支持（啟用）JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解詳情 ></strong></a>
     </div>
 </noscript>
 
@@ -1792,7 +1792,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/app.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/parallax.js","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/rightMenu.js","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/rightMenus.js","sites":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/sites.js","friends":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/friends.js","contributors":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/contributors.js","search":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1721793584313),
+    lastupdate: new Date(1721884798682),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2579,6 +2579,91 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day83_1/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Collins's Blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Collins's Blog">
+    <meta itemprop="description" content="且行且珍惜">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/p/leetcode/day83_1/"  itemprop="url">
+        背包问题总结
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        背包九讲（简略版）
+递推公式
+能否装满（或者最多装多少）：dp[j] = max(dp[j], dp[j - nums[i]] + nums[i])
+
+416. 分割等和子集
+1049. 最后一块石头的重量 II
+
+装满背包有多少种方法：dp[j] += dp[j - nums[i]]
+
+494. 目标和
+518. 零钱兑换 II
+377. 组合总和 Ⅳ
+57. 爬楼梯(进阶版)
+
+背包装满...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+            <meta itemprop="name" content="Collins">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-07-10T00:00:00+08:00">2024-07-10</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/leetcode/">leetcode</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/leetcode/" itemprop="url"><span itemprop="name">leetcode</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/p/leetcode/day83_1/' itemprop="url">
+            閱讀全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
   <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day82/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Collins's Blog">
@@ -2641,7 +2726,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day82/' itemprop="url">
-            阅读全文
+            閱讀全文
           </a>
         </div>
       
@@ -2715,7 +2800,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day81/' itemprop="url">
-            阅读全文
+            閱讀全文
           </a>
         </div>
       
@@ -2792,7 +2877,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day80/' itemprop="url">
-            阅读全文
+            閱讀全文
           </a>
         </div>
       
@@ -2867,7 +2952,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day79/' itemprop="url">
-            阅读全文
+            閱讀全文
           </a>
         </div>
       
@@ -2943,7 +3028,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day78/' itemprop="url">
-            阅读全文
+            閱讀全文
           </a>
         </div>
       
@@ -3017,7 +3102,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day77/' itemprop="url">
-            阅读全文
+            閱讀全文
           </a>
         </div>
       
@@ -3092,7 +3177,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day76/' itemprop="url">
-            阅读全文
+            閱讀全文
           </a>
         </div>
       
@@ -3158,7 +3243,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day75/' itemprop="url">
-            阅读全文
+            閱讀全文
           </a>
         </div>
       
@@ -3226,73 +3311,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day74/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day73/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Collins's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Collins's Blog">
-    <meta itemprop="description" content="且行且珍惜">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day73/"  itemprop="url">
-        统计字典序元音字符串的数目
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        1641. 统计字典序元音字符串的数目题目描述：给你一个整数 n，请返回长度为 n 、仅由元音 (a, e, i, o, u) 组成且按 字典序排列 的字符串数量。
-字符串 s 按 字典序排列 需要满足：对于所有有效的 i，s[i] 在字母表中的位置总是与 s[i+1] 相同或在 s[i+1] 之前。
-示例：示例 1：
-123输入：n = 1输出：5解释：仅由元音组成的 5 个字典序字符串为...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-            <meta itemprop="name" content="Collins">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-06-16T00:00:00+08:00">2024-06-16</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/p/leetcode/day73/' itemprop="url">
-            阅读全文
+            閱讀全文
           </a>
         </div>
       
@@ -3313,7 +3332,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <a class="prev" rel="prev" href="/">
             <section class="post prev white-box shadow" >
-              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页&nbsp;
+              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>&nbsp;上一頁&nbsp;
             </section>
           </a>
         
@@ -3323,7 +3342,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <a class="next" rel="next" href="/page/3/">
             <section class="post next white-box shadow">
-              &nbsp;下一页&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              &nbsp;下一頁&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
             </section>
           </a>
         
@@ -3426,7 +3445,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <li><a class="flat-box"
             title="/categories/leetcode/" href="/categories/leetcode/"
             active-action="action-categoriesleetcode"
-            ><div class='name'>leetcode</div><div class='badge'>(30)</div></a></li>
+            ><div class='name'>leetcode</div><div class='badge'>(31)</div></a></li>
         
       </ul>
     </div>
@@ -3462,7 +3481,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>93 篇</div>
+          <div>94 篇</div>
         </div>
       
 
@@ -3477,7 +3496,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>100.8k 字</div>
+          <div>102.6k 字</div>
         </div>
       
 
@@ -3488,7 +3507,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2024-07-24 日</div>
+          <div id="last-update-show">2024-07-25 日</div>
         </div>
       
     </div>
@@ -3513,7 +3532,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/p/leetcode/day86/"><div class="item"><time>2024-07-23</time></div><span>买卖股票的最佳时机含冷冻期</span></a></li><li><a class="widget-last" href="/p/leetcode/day88/"><div class="item"><time>2024-07-22</time><span>leetcode</span></div><span>最长重复子数组</span></a></li><li><a class="widget-last" href="/p/leetcode/day87/"><div class="item"><time>2024-07-22</time><span>leetcode</span></div><span>最长递增子序列</span></a></li><li><a class="widget-last" href="/p/leetcode/day57/"><div class="item"><time>2024-07-20</time><span>leetcode</span></div><span>买卖股票的最佳时机</span></a></li><li><a class="widget-last" href="/p/leetcode/day85/"><div class="item"><time>2024-07-19</time><span>leetcode</span></div><span>乘积最大子数组</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/p/leetcode/day91/"><div class="item"><time>2024-07-25</time><span>leetcode</span></div><span>不同的子序列</span></a></li><li><a class="widget-last" href="/p/leetcode/day90/"><div class="item"><time>2024-07-25</time><span>leetcode</span></div><span>判断子序列</span></a></li><li><a class="widget-last" href="/p/leetcode/day56/"><div class="item"><time>2024-07-25</time><span>leetcode</span></div><span>最大子数组和</span></a></li><li><a class="widget-last" href="/p/leetcode/day89/"><div class="item"><time>2024-07-25</time><span>leetcode</span></div><span>最长公共子序列</span></a></li><li><a class="widget-last" href="/p/leetcode/day88/"><div class="item"><time>2024-07-25</time><span>leetcode</span></div><span>最长重复子数组</span></a></li></ul>
   </div>
 </section>
 
@@ -3628,7 +3647,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     
       
-        <div><p>博客内容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+        <div><p>博客內容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW">姓名標示-非商業性-相同方式分享 4.0 國際 (CC BY-NC-SA 4.0) 協議</a></p>
 </div>
       
     
@@ -3642,7 +3661,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         本站使用
         <a href="https://github.com/volantis-x/hexo-theme-volantis/#5.8.0" target="_blank" class="codename">Volantis</a>
-        作为主题
+        作為主題
       
     
       

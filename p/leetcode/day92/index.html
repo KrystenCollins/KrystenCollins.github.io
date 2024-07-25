@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://krystencollins.github.io/p/leetcode/day61/"/>
+  <link rel="canonical" href="https://krystencollins.github.io/p/leetcode/day92/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -42,13 +42,13 @@
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="Collins&#39;s Blog">
-<meta property="og:url" content="https://krystencollins.github.io/p/leetcode/day61/index.html">
+<meta property="og:url" content="https://krystencollins.github.io/p/leetcode/day92/index.html">
 <meta property="og:site_name" content="Collins&#39;s Blog">
-<meta property="og:description" content="134. 加油站题目描述：在一条环路上有 n 个加油站，其中第 i 个加油站有汽油 gas[i] 升。 你有一辆油箱容量无限的的汽车，从第 i 个加油站开往第 i+1 个加油站需要消耗汽油 cost[i] 升。你从其中的一个加油站出发，开始时油箱为空。 给定两个整数数组 gas 和 cost ，如果你可以按顺序绕环路行驶一周，则返回出发时加油站的编号，否则返回 -1 。如果存在解，则 保证 它是">
+<meta property="og:description" content="且行且珍惜">
 <meta property="og:locale">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2024-06-03T16:00:00.000Z">
-<meta property="article:modified_time" content="2024-06-05T04:16:41.024Z">
+<meta property="article:published_time" content="2024-07-24T16:00:00.000Z">
+<meta property="article:modified_time" content="2024-07-25T05:18:51.214Z">
 <meta property="article:author" content="Krysten· Collins">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -2574,7 +2574,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day61/">
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day92/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Collins's Blog">
   </span>
@@ -2603,92 +2603,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h3 id="134-加油站"><a href="#134-加油站" class="headerlink" title="134. 加油站"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/gas-station/">134. 加油站</a></h3><h4 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h4><p>在一条环路上有 <code>n</code> 个加油站，其中第 <code>i</code> 个加油站有汽油 <code>gas[i]</code> 升。</p>
-<p>你有一辆油箱容量无限的的汽车，从第 <code>i</code> 个加油站开往第 <code>i+1</code> 个加油站需要消耗汽油 <code>cost[i]</code> 升。你从其中的一个加油站出发，开始时油箱为空。</p>
-<p>给定两个整数数组 <code>gas</code> 和 <code>cost</code> ，如果你可以按顺序绕环路行驶一周，则返回出发时加油站的编号，否则返回 <code>-1</code> 。如果存在解，则 <strong>保证</strong> 它是 <strong>唯一</strong> 的。</p>
-<h4 id="示例："><a href="#示例：" class="headerlink" title="示例："></a>示例：</h4><p><strong>示例 1:</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">输入: gas = [1,2,3,4,5], cost = [3,4,5,1,2]</span><br><span class="line">输出: 3</span><br><span class="line">解释:</span><br><span class="line">从 3 号加油站(索引为 3 处)出发，可获得 4 升汽油。此时油箱有 = 0 + 4 = 4 升汽油</span><br><span class="line">开往 4 号加油站，此时油箱有 4 - 1 + 5 = 8 升汽油</span><br><span class="line">开往 0 号加油站，此时油箱有 8 - 2 + 1 = 7 升汽油</span><br><span class="line">开往 1 号加油站，此时油箱有 7 - 3 + 2 = 6 升汽油</span><br><span class="line">开往 2 号加油站，此时油箱有 6 - 4 + 3 = 5 升汽油</span><br><span class="line">开往 3 号加油站，你需要消耗 5 升汽油，正好足够你返回到 3 号加油站。</span><br><span class="line">因此，3 可为起始索引。</span><br></pre></td></tr></table></figure>
-
-<p><strong>示例 2:</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">输入: gas = [2,3,4], cost = [3,4,3]</span><br><span class="line">输出: -1</span><br><span class="line">解释:</span><br><span class="line">你不能从 0 号或 1 号加油站出发，因为没有足够的汽油可以让你行驶到下一个加油站。</span><br><span class="line">我们从 2 号加油站出发，可以获得 4 升汽油。 此时油箱有 = 0 + 4 = 4 升汽油</span><br><span class="line">开往 0 号加油站，此时油箱有 4 - 3 + 2 = 3 升汽油</span><br><span class="line">开往 1 号加油站，此时油箱有 3 - 3 + 3 = 3 升汽油</span><br><span class="line">你无法返回 2 号加油站，因为返程需要消耗 4 升汽油，但是你的油箱只有 3 升汽油。</span><br><span class="line">因此，无论怎样，你都不可能绕环路行驶一周。</span><br></pre></td></tr></table></figure>
-
-<h4 id="提示"><a href="#提示" class="headerlink" title="提示:"></a><strong>提示:</strong></h4><ul>
-<li><code>gas.length == n</code></li>
-<li><code>cost.length == n</code></li>
-<li><code>1 &lt;= n &lt;= 105</code></li>
-<li><code>0 &lt;= gas[i], cost[i] &lt;= 104</code></li>
-</ul>
-<h4 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h4><h5 id="暴力法"><a href="#暴力法" class="headerlink" title="暴力法"></a>暴力法</h5><p>思维陷阱：是否“断油” 和 是否绕环路一周 分开判断，若一圈后 油量有剩余，则陷入死循环</p>
-<p>必须同时判断是否“断油” 和 绕环路一周</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">canCompleteCircuit</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; gas, vector&lt;<span class="type">int</span>&gt;&amp; cost)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> n = gas.<span class="built_in">size</span>();</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">            <span class="type">int</span> rest = gas[i] - cost[i];    <span class="comment">// 剩余油量</span></span><br><span class="line">            <span class="type">int</span> index = (i + <span class="number">1</span>) % n;</span><br><span class="line">            <span class="comment">// 模拟以i为起点行驶一周</span></span><br><span class="line">            <span class="keyword">while</span> (rest &gt; <span class="number">0</span> &amp;&amp; index != i) &#123;</span><br><span class="line">                rest += gas[index] + -cost[index];</span><br><span class="line">                index = (index + <span class="number">1</span>) % n;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 绕环路行驶一周后，回到起点</span></span><br><span class="line">            <span class="keyword">if</span> (rest &gt;= <span class="number">0</span> &amp;&amp; index == i) <span class="keyword">return</span> i;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<ul>
-<li>时间复杂度：<code>O(n^2)</code></li>
-<li>空间复杂度：<code>O(1)</code></li>
-</ul>
-</blockquote>
-<h5 id="贪心算法"><a href="#贪心算法" class="headerlink" title="贪心算法"></a>贪心算法</h5><p>方法一：全局贪心选择</p>
-<ul>
-<li>若gas总和&lt;cost总和，无论从哪出发一定跑不了一圈</li>
-<li>每天剩余油量rest[i] &#x3D; gas[i] - cost[i]，若从索引0开始累加每天剩余油量到最后一站，累加过程没有出现负数，说明从0出发，油没有断过，则0为起点</li>
-<li>若累加过程中出现的最小值为负数，说明索引0不是起点，则从后往前，看那个节点能把这个负数填平，能把这个负数填平的节点为出发节点（因为从0出发说明初始油量为0，而从0出发会有累加剩余油量为负，即油量不够；从后往前，就是将剩余油量累计都索引0，<strong>相当于从0出发时 初始油量 不为0</strong>！）</li>
-</ul>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">canCompleteCircuit</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; gas, vector&lt;<span class="type">int</span>&gt;&amp; cost)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> curSum = <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> minSum = INT_MAX;	<span class="comment">// 从索引0出发，剩余油量累加过程中出现的最小值</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; gas.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            curSum += gas[i] - cost[i];</span><br><span class="line">            minSum = <span class="built_in">min</span>(curSum, minSum);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (curSum &lt; <span class="number">0</span>) <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">if</span> (minSum &gt;= <span class="number">0</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = gas.<span class="built_in">size</span>() - <span class="number">1</span>; i &gt;= <span class="number">0</span>; --i) &#123;</span><br><span class="line">            minSum += gas[i] - cost[i];</span><br><span class="line">            <span class="keyword">if</span> (minSum &gt;= <span class="number">0</span>) <span class="keyword">return</span> i;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<ul>
-<li>时间复杂度：<code>O(n)</code></li>
-<li>空间复杂度：<code>O(1)</code></li>
-</ul>
-</blockquote>
-<p>方法二：i从0开始累加rest[i]，和记为curSum，一旦curSum小于零，说明[0, i]区间都不能作为起始位置，因为这个区间选择任何一个位置作为起点，到i这里都会断油，那么起始位置从i+1算起，再从0计算curSum。</p>
-<p>局部最优：<strong>当前rest[i]累加和curSum一旦小于0，起始位置至少要从 i+1 开始，因为i之前开始一定不行</strong></p>
-<p>全局最优：找到可以跑一圈的位置</p>
-<p><img src="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202406051210906.png" class="lazyload" data-srcset="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202406051210906.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
-<blockquote>
-<p>如果 curSum&lt;0 说明 区间和1 + 区间和2 &lt; 0， 那么 假设从上图中的位置开始计数curSum不会小于0的话，就是 区间和2&gt;0。</p>
-<p>区间和1 + 区间和2 &lt; 0 同时 区间和2&gt;0，只能说明区间和1 &lt; 0， 那么就会从假设的箭头初就开始从新选择其实位置了。</p>
-</blockquote>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">canCompleteCircuit</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; gas, vector&lt;<span class="type">int</span>&gt;&amp; cost)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> curSum = <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> totalSum = <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> start = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; gas.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            curSum += gas[i] - cost[i];</span><br><span class="line">            totalSum += gas[i] - cost[i];</span><br><span class="line">            <span class="keyword">if</span> (curSum &lt; <span class="number">0</span>) &#123;   <span class="comment">// 当前rest[i]累加和 curSum小于0</span></span><br><span class="line">                start = i + <span class="number">1</span>;  <span class="comment">// 更新起始位置</span></span><br><span class="line">                curSum = <span class="number">0</span>;     <span class="comment">// 重置curSum</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (totalSum &lt; <span class="number">0</span>) <span class="keyword">return</span> <span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">return</span> start;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<ul>
-<li>时间复杂度：<code>O(n)</code></li>
-<li>空间复杂度：<code>O(1)</code></li>
-</ul>
-</blockquote>
-<h3 id="2099-找到和最大的长度为-K-的子序列"><a href="#2099-找到和最大的长度为-K-的子序列" class="headerlink" title="2099. 找到和最大的长度为 K 的子序列"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/find-subsequence-of-length-k-with-the-largest-sum/">2099. 找到和最大的长度为 K 的子序列</a></h3><h4 id="题目描述：-1"><a href="#题目描述：-1" class="headerlink" title="题目描述："></a>题目描述：</h4><p>给你一个整数数组 <code>nums</code> 和一个整数 <code>k</code> 。你需要找到 <code>nums</code> 中长度为 <code>k</code> 的 <strong>子序列</strong> ，且这个子序列的 <strong>和最大</strong> 。</p>
-<p>请你返回 <strong>任意</strong> 一个长度为 <code>k</code> 的整数子序列。</p>
-<p><strong>子序列</strong> 定义为从一个数组里删除一些元素后，不改变剩下元素的顺序得到的数组。</p>
-<h4 id="示例：-1"><a href="#示例：-1" class="headerlink" title="示例："></a>示例：</h4><p><strong>示例 1：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">输入：nums = [2,1,3,3], k = 2</span><br><span class="line">输出：[3,3]</span><br><span class="line">解释：</span><br><span class="line">子序列有最大和：3 + 3 = 6 。</span><br></pre></td></tr></table></figure>
-
-<p><strong>示例 2：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">输入：nums = [-1,-2,3,4], k = 3</span><br><span class="line">输出：[-1,3,4]</span><br><span class="line">解释：</span><br><span class="line">子序列有最大和：-1 + 3 + 4 = 6 。</span><br></pre></td></tr></table></figure>
-
-<p><strong>示例 3：</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">输入：nums = [3,4,3,3], k = 2</span><br><span class="line">输出：[3,4]</span><br><span class="line">解释：</span><br><span class="line">子序列有最大和：3 + 4 = 7 。</span><br><span class="line">另一个可行的子序列为 [4, 3] 。</span><br></pre></td></tr></table></figure>
-
-<h5 id="提示："><a href="#提示：" class="headerlink" title="提示："></a><strong>提示：</strong></h5><ul>
-<li><code>1 &lt;= nums.length &lt;= 1000</code></li>
-<li><code>-105 &lt;= nums[i] &lt;= 105</code></li>
-<li><code>1 &lt;= k &lt;= nums.length</code></li>
-</ul>
-<h4 id="题解：-1"><a href="#题解：-1" class="headerlink" title="题解："></a>题解：</h4><h5 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h5><p>先对数值进行降序排序，再对前K个元素的索引进行升序排序</p>
-<p>在维护索引的同时对数组进行排序？</p>
-<ul>
-<li>使用“哈希表”，构造排序仿函数</li>
-</ul>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="keyword">class</span> <span class="title class_">cmp1</span> &#123;</span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        <span class="function"><span class="type">bool</span> <span class="title">operator</span><span class="params">()</span><span class="params">(pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt; a, pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt; b)</span> </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> a.second &gt; b.second;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">class</span> <span class="title class_">cmp2</span> &#123;</span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        <span class="function"><span class="type">bool</span> <span class="title">operator</span><span class="params">()</span><span class="params">(pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt; a, pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt; b)</span> </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> a.first &lt; b.first;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">maxSubsequence</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums, <span class="type">int</span> k)</span> </span>&#123;</span><br><span class="line">        vector&lt;pair&lt;<span class="type">int</span>, <span class="type">int</span>&gt;&gt; vals;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; nums.<span class="built_in">size</span>(); ++i) &#123;</span><br><span class="line">            vals.<span class="built_in">push_back</span>(<span class="built_in">pair</span>&lt;<span class="type">int</span>, <span class="type">int</span>&gt; (i, nums[i]));</span><br><span class="line">        &#125;    </span><br><span class="line">        <span class="comment">// 按照数值降序排序</span></span><br><span class="line">        <span class="built_in">sort</span>(vals.<span class="built_in">begin</span>(), vals.<span class="built_in">end</span>(), <span class="built_in">cmp1</span>());</span><br><span class="line">        <span class="comment">// 取前k个元素按照下标升序排序</span></span><br><span class="line">        <span class="built_in">sort</span>(vals.<span class="built_in">begin</span>(), vals.<span class="built_in">begin</span>() + k, <span class="built_in">cmp2</span>());</span><br><span class="line">        vector&lt;<span class="type">int</span>&gt; ans;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; k; ++i) &#123;</span><br><span class="line">            ans.<span class="built_in">push_back</span>(vals[i].second);</span><br><span class="line">        &#125; </span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<ul>
-<li>时间复杂度：<code>O(nlog n)</code></li>
-<li>空间复杂度：<code>O(n)</code></li>
-</ul>
-</blockquote>
-
+    
   </div>
   
   
@@ -2704,7 +2619,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
           <div class="copyright license">
             <div class="license-title"></div>
-            <div class="license-link"><a href="https://krystencollins.github.io/p/leetcode/day61/">https://krystencollins.github.io/p/leetcode/day61/</a>
+            <div class="license-link"><a href="https://krystencollins.github.io/p/leetcode/day92/">https://krystencollins.github.io/p/leetcode/day92/</a>
             </div>
             <div class="license-meta">
               <div class="license-meta-item">
@@ -2713,12 +2628,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               </div>
               <div class="license-meta-item">
                 <div class="license-meta-title">发布于</div>
-                <div class="license-meta-text">Jun 4, 2024</div>
-              </div>
-              
-              <div class="license-meta-item">
-                <div class="license-meta-title">更新于</div>
-                <div class="license-meta-text">Jun 5, 2024</div>
+                <div class="license-meta-text">Jul 25, 2024</div>
               </div>
               
               
@@ -2743,10 +2653,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-06-05T12:16:41+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-07-25T13:18:51+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Jun 5, 2024</p>
+    <p>更新于：Jul 25, 2024</p>
   </a>
 </div>
 
@@ -2792,23 +2702,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/p/leetcode/day62/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Jun 4, 2024</p>
-          <p class='content'>135. 分发糖果题目描述：n 个孩子站成一排。给你一个整数数组 ratings 表示每个孩子的评分。
-你需要按照以下要求，给这些孩子分发糖果：
-
-每个孩子至少分配到 1 个糖果。
-相邻两个孩子...</p>
-        </a>
       
-      
-        <a class='next' href='/p/leetcode/day60/'>
-          <p class='title'>Jun 4, 2024<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>1005. K 次取反后最大化的数组和题目描述：给你一个整数数组 nums 和一个整数 k ，按以下方法修改该数组：
+        <a class='next' href='/p/leetcode/day91/'>
+          <p class='title'>不同的子序列<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>115. 不同的子序列题目描述：示例：题解：动态规划1
 
-选择某个下标 i 并将 nums[i] 替换为 -nums[i] 。
-
-重...</p>
+</p>
         </a>
       
     </div>
@@ -2824,7 +2723,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/p/leetcode/day61/index.html#comments">
+      <meta itemprop="discussionUrl" content="/p/leetcode/day92/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2856,19 +2755,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
 
-  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
-    
-  <header>
-    
-      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>目录</span>
-    
-  </header>
-
-
-    <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#134-%E5%8A%A0%E6%B2%B9%E7%AB%99"><span class="toc-text">134. 加油站</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0%EF%BC%9A"><span class="toc-text">题目描述：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B%EF%BC%9A"><span class="toc-text">示例：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8F%90%E7%A4%BA"><span class="toc-text">提示:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%98%E8%A7%A3%EF%BC%9A"><span class="toc-text">题解：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9A%B4%E5%8A%9B%E6%B3%95"><span class="toc-text">暴力法</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95"><span class="toc-text">贪心算法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2099-%E6%89%BE%E5%88%B0%E5%92%8C%E6%9C%80%E5%A4%A7%E7%9A%84%E9%95%BF%E5%BA%A6%E4%B8%BA-K-%E7%9A%84%E5%AD%90%E5%BA%8F%E5%88%97"><span class="toc-text">2099. 找到和最大的长度为 K 的子序列</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0%EF%BC%9A-1"><span class="toc-text">题目描述：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B%EF%BC%9A-1"><span class="toc-text">示例：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%8F%90%E7%A4%BA%EF%BC%9A"><span class="toc-text">提示：</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%98%E8%A7%A3%EF%BC%9A-1"><span class="toc-text">题解：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%8E%92%E5%BA%8F"><span class="toc-text">排序</span></a></li></ol></li></ol></li></ol>
-    </div>
-  </section>
+  <div class="">
+    <!-- pjax占位 -->
+  </div>
 
   
 
@@ -3935,7 +3824,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Collins's Blog","url":"https://krystencollins.github.io/","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/","sameAs":["https://github.com/volantis-x"],"description":"且行且珍惜"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://krystencollins.github.io/","name":"Collins's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://krystencollins.github.io/p/leetcode/day61/"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Collins's Blog","url":"https://krystencollins.github.io/","keywords":null,"description":"且行且珍惜","author":{"@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/","description":"且行且珍惜"},"publisher":{"@type":"Organization","name":"Collins's Blog","url":"https://krystencollins.github.io/","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://krystencollins.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"且行且珍惜","inLanguage":"-zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://krystencollins.github.io/p/leetcode/day61/"},"author":{"@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/"},"publisher":{"@type":"Organization","name":"Collins's Blog","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},"url":"https://krystencollins.github.io/p/leetcode/day61/","wordCount":0,"datePublished":"2024-06-03T16:00:00.000Z","dateModified":"2024-06-05T04:16:41.024Z","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Collins's Blog","url":"https://krystencollins.github.io/","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/","sameAs":["https://github.com/volantis-x"],"description":"且行且珍惜"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://krystencollins.github.io/","name":"Collins's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://krystencollins.github.io/categories/leetcode/","name":"leetcode"}},{"@type":"ListItem","position":3,"item":{"@id":"https://krystencollins.github.io/p/leetcode/day92/"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Collins's Blog","url":"https://krystencollins.github.io/","keywords":null,"description":"且行且珍惜","author":{"@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/","description":"且行且珍惜"},"publisher":{"@type":"Organization","name":"Collins's Blog","url":"https://krystencollins.github.io/","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://krystencollins.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"且行且珍惜","inLanguage":"-zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://krystencollins.github.io/p/leetcode/day92/"},"author":{"@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/"},"publisher":{"@type":"Organization","name":"Collins's Blog","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},"url":"https://krystencollins.github.io/p/leetcode/day92/","wordCount":0,"datePublished":"2024-07-24T16:00:00.000Z","dateModified":"2024-07-25T05:18:51.214Z","articleSection":"leetcode","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}}]</script>
 
 
 

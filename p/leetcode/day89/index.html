@@ -36,19 +36,19 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Collins's Blog</title>
+  <title>最长公共子序列 - Collins's Blog</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="且行且珍惜 - Krysten· Collins - Collins's Blog">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="Collins&#39;s Blog">
+<meta property="og:title" content="最长公共子序列">
 <meta property="og:url" content="https://krystencollins.github.io/p/leetcode/day89/index.html">
 <meta property="og:site_name" content="Collins&#39;s Blog">
-<meta property="og:description" content="1143. 最长公共子序列题目描述：示例：题解：动态规划1035. 不相交的线题目描述：示例：题解：">
+<meta property="og:description" content="1143. 最长公共子序列题目描述：给定两个字符串 text1 和 text2，返回这两个字符串的最长 公共子序列 的长度。如果不存在 公共子序列 ，返回 0 。 一个字符串的 子序列 是指这样一个新的字符串：它是由原字符串在不改变字符的相对顺序的情况下删除某些字符（也可以不删除任何字符）后组成的新字符串。  例如，&quot;ace&quot; 是 &quot;abcde&quot; 的子序列，">
 <meta property="og:locale">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2024-07-21T16:00:00.000Z">
-<meta property="article:modified_time" content="2024-07-24T03:57:03.073Z">
+<meta property="article:modified_time" content="2024-07-25T04:34:13.096Z">
 <meta property="article:author" content="Krysten· Collins">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1747,9 +1747,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
-        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
+        `<span class="kill-t"><b>抱歉，您的瀏覽器無法訪問本站</b></span><br/>`+
+        `<span class="kill-c">微軟已經於2016年終止了對 Internet Explorer (IE) 10 及更早版本的支持，<br/>繼續使用存在極大的安全隱患，請使用當代主流的瀏覽器進行訪問。</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解詳情 ></strong></a>`+
     '</div>');
 </script>
 
@@ -1777,9 +1777,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
-        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
+        <span class="kill-t"><b>抱歉，您的瀏覽器無法訪問本站</b></span><br/>
+        <span class="kill-c">本頁面需要瀏覽器支持（啟用）JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解詳情 ></strong></a>
     </div>
 </noscript>
 
@@ -1794,7 +1794,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/app.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/parallax.js","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/rightMenu.js","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/rightMenus.js","sites":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/sites.js","friends":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/friends.js","contributors":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/contributors.js","search":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1721793584313),
+    lastupdate: new Date(1721884798682),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2594,16 +2594,145 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
     
-      <span hidden itemprop="name headline">
+      <h1 class="title" itemprop="name headline">
+        最长公共子序列
+      </h1>
+      <div class='new-meta-box'>
         
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png" class="lazyload" data-srcset="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">Collins</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/leetcode/">leetcode</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/leetcode/" itemprop="url"><span itemprop="name">leetcode</span></a>
       </span>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-07-22T00:00:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Jul 22, 2024</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字數：934字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>時長：4分鐘</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+
+
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
 
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h3 id="1143-最长公共子序列"><a href="#1143-最长公共子序列" class="headerlink" title="1143. 最长公共子序列"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/longest-common-subsequence/">1143. 最长公共子序列</a></h3><h4 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h4><h4 id="示例："><a href="#示例：" class="headerlink" title="示例："></a>示例：</h4><h4 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h4><h5 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h5><h3 id="1035-不相交的线"><a href="#1035-不相交的线" class="headerlink" title="1035. 不相交的线"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/uncrossed-lines/">1035. 不相交的线</a></h3><h4 id="题目描述：-1"><a href="#题目描述：-1" class="headerlink" title="题目描述："></a>题目描述：</h4><h4 id="示例：-1"><a href="#示例：-1" class="headerlink" title="示例："></a>示例：</h4><h4 id="题解：-1"><a href="#题解：-1" class="headerlink" title="题解："></a>题解：</h4>
+    <h3 id="1143-最长公共子序列"><a href="#1143-最长公共子序列" class="headerlink" title="1143. 最长公共子序列"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/longest-common-subsequence/">1143. 最长公共子序列</a></h3><h4 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h4><p>给定两个字符串 <code>text1</code> 和 <code>text2</code>，返回这两个字符串的最长 <strong>公共子序列</strong> 的长度。如果不存在 <strong>公共子序列</strong> ，返回 <code>0</code> 。</p>
+<p>一个字符串的 <strong>子序列</strong> 是指这样一个新的字符串：它是由原字符串在不改变字符的相对顺序的情况下删除某些字符（也可以不删除任何字符）后组成的新字符串。</p>
+<ul>
+<li>例如，<code>&quot;ace&quot;</code> 是 <code>&quot;abcde&quot;</code> 的子序列，但 <code>&quot;aec&quot;</code> 不是 <code>&quot;abcde&quot;</code> 的子序列。</li>
+</ul>
+<p>两个字符串的 <strong>公共子序列</strong> 是这两个字符串所共同拥有的子序列。</p>
+<h4 id="示例："><a href="#示例：" class="headerlink" title="示例："></a>示例：</h4><p><strong>示例 1：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入：text1 = &quot;abcde&quot;, text2 = &quot;ace&quot; </span><br><span class="line">输出：3  </span><br><span class="line">解释：最长公共子序列是 &quot;ace&quot; ，它的长度为 3 。</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例 2：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入：text1 = &quot;abc&quot;, text2 = &quot;abc&quot;</span><br><span class="line">输出：3</span><br><span class="line">解释：最长公共子序列是 &quot;abc&quot; ，它的长度为 3 。</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例 3：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入：text1 = &quot;abc&quot;, text2 = &quot;def&quot;</span><br><span class="line">输出：0</span><br><span class="line">解释：两个字符串没有公共子序列，返回 0 。</span><br></pre></td></tr></table></figure>
+
+<h4 id="提示："><a href="#提示：" class="headerlink" title="提示："></a><strong>提示：</strong></h4><ul>
+<li><code>1 &lt;= text1.length, text2.length &lt;= 1000</code></li>
+<li><code>text1</code> 和 <code>text2</code> 仅由小写英文字符组成。</li>
+</ul>
+<h4 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h4><h5 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h5><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">    1. dp数组以及下标含义：dp[i][j]表示以i-1下标结尾的text1和j-1结尾的text2最长公共子序列</span></span><br><span class="line"><span class="comment">    2. 递推公式：dp[i][j] = dp[i-1][j-1] + 1, 当text1[i-1] == text2[j-1]</span></span><br><span class="line"><span class="comment">                否则，dp[i][j] = max(dp[i-1][j], dp[i][j-1])</span></span><br><span class="line"><span class="comment">    3. 初始化：dp[i][0] = 0, dp[0][j] = 0</span></span><br><span class="line"><span class="comment">    4. 遍历顺序：从前往后</span></span><br><span class="line"><span class="comment">    5. 举例推导dp数组：</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">longestCommonSubsequence</span><span class="params">(string text1, string text2)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> n = text1.<span class="built_in">size</span>();</span><br><span class="line">        <span class="type">int</span> m = text2.<span class="built_in">size</span>();</span><br><span class="line">        vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; <span class="built_in">dp</span>(n + <span class="number">1</span>, <span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;(m + <span class="number">1</span>, <span class="number">0</span>));</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; ++i) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">1</span>; j &lt;= m; ++j) &#123;</span><br><span class="line">                <span class="keyword">if</span> (text1[i - <span class="number">1</span>] == text2[j <span class="number">-1</span>]) dp[i][j] = dp[i - <span class="number">1</span>][j - <span class="number">1</span>] + <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">else</span> dp[i][j] = <span class="built_in">max</span>(dp[i - <span class="number">1</span>][j], dp[i][j - <span class="number">1</span>]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[n][m];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<ul>
+<li>时间复杂度：<code>O(n * m)</code></li>
+<li>空间复杂度：<code>O(n * m)</code></li>
+</ul>
+</blockquote>
+<p>无法空间优化！！！</p>
+<h3 id="1035-不相交的线"><a href="#1035-不相交的线" class="headerlink" title="1035. 不相交的线"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/uncrossed-lines/">1035. 不相交的线</a></h3><h4 id="题目描述：-1"><a href="#题目描述：-1" class="headerlink" title="题目描述："></a>题目描述：</h4><p>在两条独立的水平线上按给定的顺序写下 <code>nums1</code> 和 <code>nums2</code> 中的整数。</p>
+<p>现在，可以绘制一些连接两个数字 <code>nums1[i]</code> 和 <code>nums2[j]</code> 的直线，这些直线需要同时满足：</p>
+<ul>
+<li><code>nums1[i] == nums2[j]</code></li>
+<li>且绘制的直线不与任何其他连线（非水平线）相交。</li>
+</ul>
+<p>请注意，连线即使在端点也不能相交：每个数字只能属于一条连线。</p>
+<p>以这种方法绘制线条，并返回可以绘制的最大连线数。</p>
+<h4 id="示例：-1"><a href="#示例：-1" class="headerlink" title="示例："></a>示例：</h4><p><strong>示例 1：</strong></p>
+<img src="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202407251233553.png" class="lazyload" data-srcset="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202407251233553.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img" style="zoom: 33%;" />
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">输入：nums1 = [1,4,2], nums2 = [1,2,4]</span><br><span class="line">输出：2</span><br><span class="line">解释：可以画出两条不交叉的线，如上图所示。 </span><br><span class="line">但无法画出第三条不相交的直线，因为从 nums1[1]=4 到 nums2[2]=4 的直线将与从 nums1[2]=2 到 nums2[1]=2 的直线相交。</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例 2：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：nums1 = [2,5,1,2,5], nums2 = [10,5,2,1,5,2]</span><br><span class="line">输出：3</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例 3：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：nums1 = [1,3,7,1,7,5], nums2 = [1,9,2,5,1]</span><br><span class="line">输出：2</span><br></pre></td></tr></table></figure>
+
+<h4 id="提示：-1"><a href="#提示：-1" class="headerlink" title="提示："></a><strong>提示：</strong></h4><ul>
+<li><code>1 &lt;= nums1.length, nums2.length &lt;= 500</code></li>
+<li><code>1 &lt;= nums1[i], nums2[j] &lt;= 2000</code></li>
+</ul>
+<h4 id="题解：-1"><a href="#题解：-1" class="headerlink" title="题解："></a>题解：</h4><h5 id="动态规划-1"><a href="#动态规划-1" class="headerlink" title="动态规划"></a>动态规划</h5><p>与最长公共子序列类似！！</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">maxUncrossedLines</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums1, vector&lt;<span class="type">int</span>&gt;&amp; nums2)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> n = nums1.<span class="built_in">size</span>();</span><br><span class="line">        <span class="type">int</span> m = nums2.<span class="built_in">size</span>();</span><br><span class="line">        vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; <span class="built_in">dp</span>(n + <span class="number">1</span>, <span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;(m + <span class="number">1</span>, <span class="number">0</span>));</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; ++i) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">1</span>; j &lt;= m; ++j) &#123;</span><br><span class="line">                <span class="keyword">if</span> (nums1[i - <span class="number">1</span>] == nums2[j <span class="number">-1</span>]) dp[i][j] = dp[i - <span class="number">1</span>][j - <span class="number">1</span>] + <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">else</span> dp[i][j] = <span class="built_in">max</span>(dp[i - <span class="number">1</span>][j], dp[i][j - <span class="number">1</span>]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[n][m];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<ul>
+<li>时间复杂度：<code>O(n * m)</code></li>
+<li>空间复杂度：<code>O(n * m)</code></li>
+</ul>
+</blockquote>
+
   </div>
   
   
@@ -2618,7 +2747,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
           <div class="copyright license">
-            <div class="license-title"></div>
+            <div class="license-title">最长公共子序列</div>
             <div class="license-link"><a href="https://krystencollins.github.io/p/leetcode/day89/">https://krystencollins.github.io/p/leetcode/day89/</a>
             </div>
             <div class="license-meta">
@@ -2633,7 +2762,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               <div class="license-meta-item">
                 <div class="license-meta-title">更新于</div>
-                <div class="license-meta-text">Jul 24, 2024</div>
+                <div class="license-meta-text">Jul 25, 2024</div>
               </div>
               
               
@@ -2658,10 +2787,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-07-24T11:57:03+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-07-25T12:34:13+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Jul 24, 2024</p>
+    <p>更新于：Jul 25, 2024</p>
   </a>
 </div>
 
@@ -2708,14 +2837,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class="prev-next">
       
         <a class='prev' href='/p/leetcode/day90/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Jul 22, 2024</p>
-          <p class='content'></p>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>判断子序列</p>
+          <p class='content'>392. 判断子序列题目描述：给定字符串 s 和 t ，判断 s 是否为 t 的子序列。
+字符串的一个子序列是原始字符串删除一些（也可以不删除）字符而不改变剩余字符相对位置形成的新字符串。（例如...</p>
         </a>
       
       
         <a class='next' href='/p/leetcode/day88/'>
           <p class='title'>最长重复子数组<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>718. 最长重复子数组题目描述：示例：题解：</p>
+          <p class='content'>718. 最长重复子数组题目描述：给两个整数数组 nums1 和 nums2 ，返回 两个数组中 公共的 、长度最长的子数组的长度 。
+示例：示例 1：
+123输入：nums1 = [1,2,3...</p>
         </a>
       
     </div>
@@ -2773,7 +2905,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1143-%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97"><span class="toc-text">1143. 最长公共子序列</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0%EF%BC%9A"><span class="toc-text">题目描述：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B%EF%BC%9A"><span class="toc-text">示例：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%98%E8%A7%A3%EF%BC%9A"><span class="toc-text">题解：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92"><span class="toc-text">动态规划</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1035-%E4%B8%8D%E7%9B%B8%E4%BA%A4%E7%9A%84%E7%BA%BF"><span class="toc-text">1035. 不相交的线</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0%EF%BC%9A-1"><span class="toc-text">题目描述：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B%EF%BC%9A-1"><span class="toc-text">示例：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%98%E8%A7%A3%EF%BC%9A-1"><span class="toc-text">题解：</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1143-%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97"><span class="toc-text">1143. 最长公共子序列</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0%EF%BC%9A"><span class="toc-text">题目描述：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B%EF%BC%9A"><span class="toc-text">示例：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8F%90%E7%A4%BA%EF%BC%9A"><span class="toc-text">提示：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%98%E8%A7%A3%EF%BC%9A"><span class="toc-text">题解：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92"><span class="toc-text">动态规划</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1035-%E4%B8%8D%E7%9B%B8%E4%BA%A4%E7%9A%84%E7%BA%BF"><span class="toc-text">1035. 不相交的线</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0%EF%BC%9A-1"><span class="toc-text">题目描述：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B%EF%BC%9A-1"><span class="toc-text">示例：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8F%90%E7%A4%BA%EF%BC%9A-1"><span class="toc-text">提示：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A2%98%E8%A7%A3%EF%BC%9A-1"><span class="toc-text">题解：</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92-1"><span class="toc-text">动态规划</span></a></li></ol></li></ol></li></ol>
     </div>
   </section>
 
@@ -2829,7 +2961,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2904,7 +3036,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     
       
-        <div><p>博客内容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+        <div><p>博客內容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW">姓名標示-非商業性-相同方式分享 4.0 國際 (CC BY-NC-SA 4.0) 協議</a></p>
 </div>
       
     
@@ -2918,7 +3050,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         本站使用
         <a href="https://github.com/volantis-x/hexo-theme-volantis/#5.8.0" target="_blank" class="codename">Volantis</a>
-        作为主题
+        作為主題
       
     
       
@@ -3842,7 +3974,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Collins's Blog","url":"https://krystencollins.github.io/","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/","sameAs":["https://github.com/volantis-x"],"description":"且行且珍惜"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://krystencollins.github.io/","name":"Collins's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://krystencollins.github.io/categories/leetcode/","name":"leetcode"}},{"@type":"ListItem","position":3,"item":{"@id":"https://krystencollins.github.io/p/leetcode/day89/"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Collins's Blog","url":"https://krystencollins.github.io/","keywords":null,"description":"且行且珍惜","author":{"@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/","description":"且行且珍惜"},"publisher":{"@type":"Organization","name":"Collins's Blog","url":"https://krystencollins.github.io/","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://krystencollins.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"且行且珍惜","inLanguage":"-zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://krystencollins.github.io/p/leetcode/day89/"},"author":{"@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/"},"publisher":{"@type":"Organization","name":"Collins's Blog","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},"url":"https://krystencollins.github.io/p/leetcode/day89/","wordCount":0,"datePublished":"2024-07-21T16:00:00.000Z","dateModified":"2024-07-24T03:57:03.073Z","articleSection":"leetcode","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Collins's Blog","url":"https://krystencollins.github.io/","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/","sameAs":["https://github.com/volantis-x"],"description":"且行且珍惜"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://krystencollins.github.io/","name":"Collins's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://krystencollins.github.io/categories/leetcode/","name":"leetcode"}},{"@type":"ListItem","position":3,"item":{"@id":"https://krystencollins.github.io/p/leetcode/day89/","name":"最长公共子序列"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Collins's Blog","url":"https://krystencollins.github.io/","keywords":null,"description":"且行且珍惜","author":{"@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/","description":"且行且珍惜"},"publisher":{"@type":"Organization","name":"Collins's Blog","url":"https://krystencollins.github.io/","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://krystencollins.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"最长公共子序列","description":"且行且珍惜","inLanguage":"-zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://krystencollins.github.io/p/leetcode/day89/"},"author":{"@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/"},"publisher":{"@type":"Organization","name":"Collins's Blog","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},"url":"https://krystencollins.github.io/p/leetcode/day89/","wordCount":0,"datePublished":"2024-07-21T16:00:00.000Z","dateModified":"2024-07-25T04:34:13.096Z","articleSection":"leetcode","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}}]</script>
 
 
 

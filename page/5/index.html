@@ -1745,9 +1745,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
-        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>Learn more ></strong></a>`+
+        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
+        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
     '</div>');
 </script>
 
@@ -1775,9 +1775,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
-        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
+        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
+        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
     </div>
 </noscript>
 
@@ -1792,7 +1792,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/app.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/parallax.js","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/rightMenu.js","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/rightMenus.js","sites":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/sites.js","friends":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/friends.js","contributors":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/contributors.js","search":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1724750309095),
+    lastupdate: new Date(1724750398653),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2579,6 +2579,83 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day80/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Collins's Blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Collins's Blog">
+    <meta itemprop="description" content="且行且珍惜">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/p/leetcode/day80/"  itemprop="url">
+        完全平方数
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        279. 完全平方数题目描述：给你一个整数 n ，返回 和为 n 的完全平方数的最少数量 。
+完全平方数 是一个整数，其值等于另一个整数的平方；换句话说，其值等于一个整数自乘的积。例如，1、4、9 和 16 都是完全平方数，而 3 和 11 不是。
+示例：示例 1：
+123输入：n = 12输出：3 解释：12 = 4 + 4 + 4
+
+示例 2：
+123输入：n = 13输出：2解释：13...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+            <meta itemprop="name" content="Collins">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-07-06T00:00:00+08:00">2024-07-06</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/leetcode/">leetcode</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/leetcode/" itemprop="url"><span itemprop="name">leetcode</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/p/leetcode/day80/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
   <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day79/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Collins's Blog">
@@ -2639,7 +2716,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day79/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -2715,7 +2792,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day78/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -2789,7 +2866,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day77/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -2864,7 +2941,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day76/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -2930,7 +3007,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day75/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -2998,7 +3075,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day74/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -3064,7 +3141,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day73/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -3137,7 +3214,7 @@ dp[i][j]表示从下标为0~i的物品里任意取，放进容量为j的背包�
       
         <div>
           <a class='readmore' href='/p/leetcode/day72/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -3214,86 +3291,7 @@ dp[i][j]表示从下标为0~i的物品里任意取，放进容量为j的背包�
       
         <div>
           <a class='readmore' href='/p/leetcode/day71/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day70/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Collins's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Collins's Blog">
-    <meta itemprop="description" content="且行且珍惜">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day70/"  itemprop="url">
-        不同路径
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        62. 不同路径题目描述：一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为 “Start” ）。
-机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角（在下图中标记为 “Finish” ）。
-问总共有多少条不同的路径？
-示例：示例 1：
-
-12输入：m = 3, n = 7输出：28
-
-示例 2：
-1234567输入：m = 3, n = 2输出：3解释：从左上...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-            <meta itemprop="name" content="Collins">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-06-13T00:00:00+08:00">2024-06-13</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/leetcod/">leetcod</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/leetcod/" itemprop="url"><span itemprop="name">leetcod</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/p/leetcode/day70/' itemprop="url">
-            Read More
+            阅读全文
           </a>
         </div>
       
@@ -3314,17 +3312,17 @@ dp[i][j]表示从下标为0~i的物品里任意取，放进容量为j的背包�
         
           <a class="prev" rel="prev" href="/page/4/">
             <section class="post prev white-box shadow" >
-              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>&nbsp;Previous&nbsp;
+              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页&nbsp;
             </section>
           </a>
         
         <p class="current">
-          5 / 12
+          5 / 13
         </p>
         
           <a class="next" rel="next" href="/page/6/">
             <section class="post next white-box shadow">
-              &nbsp;Next&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              &nbsp;下一页&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
             </section>
           </a>
         
@@ -3468,7 +3466,7 @@ dp[i][j]表示从下标为0~i的物品里任意取，放进容量为j的背包�
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>120 篇</div>
+          <div>121 篇</div>
         </div>
       
 
@@ -3483,7 +3481,7 @@ dp[i][j]表示从下标为0~i的物品里任意取，放进容量为j的背包�
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>125.2k 字</div>
+          <div>125.7k 字</div>
         </div>
       
 
@@ -3519,7 +3517,7 @@ dp[i][j]表示从下标为0~i的物品里任意取，放进容量为j的背包�
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/p/leetcode/day117/"><div class="item"><time>2024-08-27</time><span>leetcode</span></div><span>Prim & Kruskal</span></a></li><li><a class="widget-last" href="/p/leetcode/day116/"><div class="item"><time>2024-08-27</time><span>leetcode</span></div><span>冗余连接II</span></a></li><li><a class="widget-last" href="/p/leetcode/day64/"><div class="item"><time>2024-08-26</time><span>leetcode</span></div><span>根据身高重建队列</span></a></li><li><a class="widget-last" href="/p/leetcode/day62/"><div class="item"><time>2024-08-26</time><span>leetcode</span></div><span>分发糖果</span></a></li><li><a class="widget-last" href="/p/leetcode/day63/"><div class="item"><time>2024-08-26</time><span>leetcode</span></div><span>柠檬水找零</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/p/leetcode/day94/"><div class="item"><time>2024-08-27</time></div><span>两个字符串的最小SACII删除和</span></a></li><li><a class="widget-last" href="/p/leetcode/day117/"><div class="item"><time>2024-08-27</time><span>leetcode</span></div><span>Prim & Kruskal</span></a></li><li><a class="widget-last" href="/p/leetcode/day116/"><div class="item"><time>2024-08-27</time><span>leetcode</span></div><span>冗余连接II</span></a></li><li><a class="widget-last" href="/p/leetcode/day64/"><div class="item"><time>2024-08-26</time><span>leetcode</span></div><span>根据身高重建队列</span></a></li><li><a class="widget-last" href="/p/leetcode/day62/"><div class="item"><time>2024-08-26</time><span>leetcode</span></div><span>分发糖果</span></a></li></ul>
   </div>
 </section>
 
@@ -3634,7 +3632,7 @@ dp[i][j]表示从下标为0~i的物品里任意取，放进容量为j的背包�
       
     
       
-        <div><p>Blog content follows the <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
+        <div><p>博客内容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
 </div>
       
     
@@ -3646,9 +3644,9 @@ dp[i][j]表示从下标为0~i的物品里任意取，放进容量为j的背包�
       
     
       
-        Use
+        本站使用
         <a href="https://github.com/volantis-x/hexo-theme-volantis/#5.8.0" target="_blank" class="codename">Volantis</a>
-        as theme
+        作为主题
       
     
       

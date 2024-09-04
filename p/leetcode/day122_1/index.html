@@ -36,19 +36,19 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Collins's Blog</title>
+  <title>最短路算法总结 - Collins's Blog</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="且行且珍惜 - Krysten· Collins - Collins's Blog">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="Collins&#39;s Blog">
+<meta property="og:title" content="最短路算法总结">
 <meta property="og:url" content="https://krystencollins.github.io/p/leetcode/day122_1/index.html">
 <meta property="og:site_name" content="Collins&#39;s Blog">
-<meta property="og:description" content="且行且珍惜">
+<meta property="og:description" content="四大算法： Dijkstra：minDist数组记录 每一个节点 距离 源点 的最小距离  朴素版：可选数据结构为 邻接矩阵、邻接表    1）选择 距离源点最近 且 未访问过的节点   2）标记该节点已访问   3）更新未访问节点距离源点的最小距离  堆优化版：数据结构用邻接表效率更优；小顶堆，优先级队列存储边自动对边权值排序，    1）优先级队列 实现直接取出小顶堆节点为距离源点最近节点">
 <meta property="og:locale">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2024-08-31T16:00:00.000Z">
-<meta property="article:modified_time" content="2024-09-01T07:42:29.671Z">
+<meta property="article:modified_time" content="2024-09-02T07:11:50.212Z">
 <meta property="article:author" content="Krysten· Collins">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -1747,9 +1747,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
-        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
+        `<span class="kill-t"><b>抱歉，您的瀏覽器無法訪問本站</b></span><br/>`+
+        `<span class="kill-c">微軟已經於2016年終止了對 Internet Explorer (IE) 10 及更早版本的支持，<br/>繼續使用存在極大的安全隱患，請使用當代主流的瀏覽器進行訪問。</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解詳情 ></strong></a>`+
     '</div>');
 </script>
 
@@ -1777,9 +1777,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
-        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
+        <span class="kill-t"><b>抱歉，您的瀏覽器無法訪問本站</b></span><br/>
+        <span class="kill-c">本頁面需要瀏覽器支持（啟用）JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解詳情 ></strong></a>
     </div>
 </noscript>
 
@@ -1794,7 +1794,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/app.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/parallax.js","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/rightMenu.js","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/rightMenus.js","sites":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/sites.js","friends":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/friends.js","contributors":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/contributors.js","search":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1725259091461),
+    lastupdate: new Date(1725457055035),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2594,16 +2594,132 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
     
-      <span hidden itemprop="name headline">
+      <h1 class="title" itemprop="name headline">
+        最短路算法总结
+      </h1>
+      <div class='new-meta-box'>
         
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png" class="lazyload" data-srcset="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">Collins</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/leetcode/">leetcode</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/leetcode/" itemprop="url"><span itemprop="name">leetcode</span></a>
       </span>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-09-01T00:00:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Sep 1, 2024</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字數：407字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>時長：1分鐘</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+
+
+        <!-- Custom Files topMeta end-->
+      </div>
     
   </div>
 
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    
+    <h4 id="四大算法："><a href="#四大算法：" class="headerlink" title="四大算法："></a>四大算法：</h4><ul>
+<li><p>Dijkstra：minDist数组记录 每一个节点 距离 源点 的最小距离</p>
+<ul>
+<li>朴素版：可选数据结构为 邻接矩阵、邻接表</li>
+</ul>
+<p>  1）选择 距离源点最近 且 未访问过的节点</p>
+<p>  2）标记该节点已访问</p>
+<p>  3）更新未访问节点距离源点的最小距离</p>
+<ul>
+<li>堆优化版：数据结构用邻接表效率更优；小顶堆，优先级队列存储边自动对边权值排序，</li>
+</ul>
+<p>  1）优先级队列 实现直接取出小顶堆节点为距离源点最近节点</p>
+<p>  3）邻接表 实现每次只更新通过当前节点可达节点的最短距离</p>
+</li>
+<li><p>Bellman_Ford：对所有边进行 n-1次松弛，（数据结构：普通存储边的结构，即二维数组）</p>
+<ul>
+<li>对所有边松弛一次，相当于计算 起点到达 与起点一条边相连的节点 的最短距离（没有负权回路）</li>
+</ul>
+</li>
+<li><p>SPFA(Bellman_ford队列优化)：只对上一次松弛的时候更新的节点作为出发点所连接的边 进行松弛</p>
+<ul>
+<li>队列实现，且已在队列的节点不再重复加入（无负权回路时，minDist最终不再变化，不会无限循环）</li>
+</ul>
+</li>
+<li><p>Floyd：动态规划，k在外层循环</p>
+<ul>
+<li><code>grid[i][j] = min(grid[i][j], grid[i][k] + grid[k][j]);</code></li>
+</ul>
+</li>
+</ul>
+<p><img src="https://code-thinking-1253855093.file.myqcloud.com/pics/20240508121355.png" class="lazyload" data-srcset="https://code-thinking-1253855093.file.myqcloud.com/pics/20240508121355.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img"></p>
+<h4 id="使用场景："><a href="#使用场景：" class="headerlink" title="使用场景："></a>使用场景：</h4><ul>
+<li><p>单源且边为正数，直接使用 Dijkstra</p>
+<ul>
+<li>朴素版还是堆优化版，取决于图的稠密度</li>
+</ul>
+</li>
+<li><p>单源且边为负数，直接使用 Bellman_ford</p>
+<ul>
+<li>SPFA还是bellman_ford，取决于图的稠密度</li>
+</ul>
+</li>
+<li><p>负权回路，优先Bellman_forBellman_fordBellman_ford</p>
+</li>
+<li><p>多源，直接使用 Floyd算法</p>
+</li>
+</ul>
+
   </div>
   
   
@@ -2618,7 +2734,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
           <div class="copyright license">
-            <div class="license-title"></div>
+            <div class="license-title">最短路算法总结</div>
             <div class="license-link"><a href="https://krystencollins.github.io/p/leetcode/day122_1/">https://krystencollins.github.io/p/leetcode/day122_1/</a>
             </div>
             <div class="license-meta">
@@ -2629,6 +2745,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               <div class="license-meta-item">
                 <div class="license-meta-title">发布于</div>
                 <div class="license-meta-text">Sep 1, 2024</div>
+              </div>
+              
+              <div class="license-meta-item">
+                <div class="license-meta-title">更新于</div>
+                <div class="license-meta-text">Sep 2, 2024</div>
               </div>
               
               
@@ -2653,10 +2774,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-01T15:42:29+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-02T15:11:50+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Sep 1, 2024</p>
+    <p>更新于：Sep 2, 2024</p>
   </a>
 </div>
 
@@ -2702,16 +2823,21 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/p/leetcode/day122/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>A*算法</p>
-          <p class='content'>127. 骑士的攻击题目描述：在象棋中，马和象的移动规则分别是“马走日”和“象走田”。现给定骑士的起始坐标和目标坐标，要求根据骑士的移动规则，计算从起点到达目标点所需的最短步数。
-棋盘大小 10...</p>
+        <a class='prev' href='/p/leetcode/day123_1/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>图论总结</p>
+          <p class='content'>深搜与广搜
+深搜：对dfs函数的定义是 处理当前节点还是处理下一个节点 很重要，决定了两种不同的dfs写法
+有递归就有回溯，是否需要使用到 回溯 这个过程，具体情况具体分析
+
+
+广搜：只要加入队...</p>
         </a>
       
       
-        <a class='next' href='/p/leetcode/day121/'>
-          <p class='title'>单源有限最短路<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>96. 城市间货物运输 III题目描述：某国为促进城市间经济交流，决定对货物运输提供补贴。共有 n 个编号为 1 到 n 的城市，通过道路网络连接，网络中的道路仅允许从某个城市单向通行到另一个城...</p>
+        <a class='next' href='/p/leetcode/day122/'>
+          <p class='title'>A*算法<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>127. 骑士的攻击题目描述：在象棋中，马和象的移动规则分别是“马走日”和“象走田”。现给定骑士的起始坐标和目标坐标，要求根据骑士的移动规则，计算从起点到达目标点所需的最短步数。
+棋盘大小 10...</p>
         </a>
       
     </div>
@@ -2759,9 +2885,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
 
-  <div class="">
-    <!-- pjax占位 -->
-  </div>
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%9B%E5%A4%A7%E7%AE%97%E6%B3%95%EF%BC%9A"><span class="toc-text">四大算法：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9A"><span class="toc-text">使用场景：</span></a></li></ol>
+    </div>
+  </section>
 
   
 
@@ -2815,7 +2951,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2890,7 +3026,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     
       
-        <div><p>博客内容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+        <div><p>博客內容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW">姓名標示-非商業性-相同方式分享 4.0 國際 (CC BY-NC-SA 4.0) 協議</a></p>
 </div>
       
     
@@ -2904,7 +3040,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         本站使用
         <a href="https://github.com/volantis-x/hexo-theme-volantis/#5.8.0" target="_blank" class="codename">Volantis</a>
-        作为主题
+        作為主題
       
     
       
@@ -3828,7 +3964,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Collins's Blog","url":"https://krystencollins.github.io/","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/","sameAs":["https://github.com/volantis-x"],"description":"且行且珍惜"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://krystencollins.github.io/","name":"Collins's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://krystencollins.github.io/categories/leetcode/","name":"leetcode"}},{"@type":"ListItem","position":3,"item":{"@id":"https://krystencollins.github.io/p/leetcode/day122_1/"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Collins's Blog","url":"https://krystencollins.github.io/","keywords":null,"description":"且行且珍惜","author":{"@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/","description":"且行且珍惜"},"publisher":{"@type":"Organization","name":"Collins's Blog","url":"https://krystencollins.github.io/","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://krystencollins.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"且行且珍惜","inLanguage":"-zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://krystencollins.github.io/p/leetcode/day122_1/"},"author":{"@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/"},"publisher":{"@type":"Organization","name":"Collins's Blog","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},"url":"https://krystencollins.github.io/p/leetcode/day122_1/","wordCount":0,"datePublished":"2024-08-31T16:00:00.000Z","dateModified":"2024-09-01T07:42:29.671Z","articleSection":"leetcode","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Collins's Blog","url":"https://krystencollins.github.io/","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/","sameAs":["https://github.com/volantis-x"],"description":"且行且珍惜"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://krystencollins.github.io/","name":"Collins's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://krystencollins.github.io/categories/leetcode/","name":"leetcode"}},{"@type":"ListItem","position":3,"item":{"@id":"https://krystencollins.github.io/p/leetcode/day122_1/","name":"最短路算法总结"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Collins's Blog","url":"https://krystencollins.github.io/","keywords":null,"description":"且行且珍惜","author":{"@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/","description":"且行且珍惜"},"publisher":{"@type":"Organization","name":"Collins's Blog","url":"https://krystencollins.github.io/","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://krystencollins.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"最短路算法总结","description":"且行且珍惜","inLanguage":"-zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://krystencollins.github.io/p/leetcode/day122_1/"},"author":{"@type":"Person","name":"Krysten· Collins","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png"},"url":"https://krystencollins.github.io/"},"publisher":{"@type":"Organization","name":"Collins's Blog","logo":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}},"url":"https://krystencollins.github.io/p/leetcode/day122_1/","wordCount":0,"datePublished":"2024-08-31T16:00:00.000Z","dateModified":"2024-09-02T07:11:50.212Z","articleSection":"leetcode","image":{"@type":"ImageObject","url":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","width":192,"height":192}}]</script>
 
 
 

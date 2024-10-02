@@ -36,7 +36,7 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>分類：leetcode - Collins's Blog</title>
+  <title>分类：leetcode - Collins's Blog</title>
   <meta name="keywords" content="null">
   <meta desc name="description" content="且行且珍惜 - Krysten· Collins - Collins's Blog">
   
@@ -1745,9 +1745,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的瀏覽器無法訪問本站</b></span><br/>`+
-        `<span class="kill-c">微軟已經於2016年終止了對 Internet Explorer (IE) 10 及更早版本的支持，<br/>繼續使用存在極大的安全隱患，請使用當代主流的瀏覽器進行訪問。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解詳情 ></strong></a>`+
+        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
+        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
     '</div>');
 </script>
 
@@ -1775,9 +1775,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的瀏覽器無法訪問本站</b></span><br/>
-        <span class="kill-c">本頁面需要瀏覽器支持（啟用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解詳情 ></strong></a>
+        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
+        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
     </div>
 </noscript>
 
@@ -1792,7 +1792,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/app.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/parallax.js","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/rightMenu.js","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/rightMenus.js","sites":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/sites.js","friends":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/friends.js","contributors":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/contributors.js","search":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1725457055035),
+    lastupdate: new Date(1727857667422),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2582,7 +2582,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day109/">
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day119_1/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Collins's Blog">
   </span>
@@ -2600,19 +2600,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day109/"  itemprop="url">
-        字符串接龙
+      <a href="/p/leetcode/day119_1/"  itemprop="url">
+        阈值距离内邻居最少的城市
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        110. 字符串接龙题目描述：字典 strList 中从字符串 beginStr 和 endStr 的转换序列是一个按下述规格形成的序列： 
-\1. 序列中第一个字符串是 beginStr。
-\2. 序列中最后一个字符串是 endStr。 
-\3. 每次转换只能改变一个字符。 
-\4. 转换过程中的中间字符串必须是字典 strList 中的字符串，且strList里的每个字符串只用使用一次。...
+        1334. 阈值距离内邻居最少的城市题目描述：有 n 个城市，按从 0 到 n-1 编号。给你一个边数组 edges，其中 edges[i] = [fromi, toi, weighti] 代表 fromi 和 toi 两个城市之间的双向加权边，距离阈值是一个整数 distanceThreshold。
+返回在路径距离限制为 distanceThreshold 以内可到达城市最少的城市。如果有...
       
     
   </div>
@@ -2628,7 +2625,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             <meta itemprop="url" content="/">
           </span>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-08-11T00:00:00+08:00">2024-08-11</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-08-29T00:00:00+08:00">2024-08-29</time>
         
           <span class="dot"></span>
           <a class="category-link" href="/categories/leetcode/">leetcode</a>
@@ -2641,8 +2638,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       </div>
       
         <div>
-          <a class='readmore' href='/p/leetcode/day109/' itemprop="url">
-            閱讀全文
+          <a class='readmore' href='/p/leetcode/day119_1/' itemprop="url">
+            阅读全文
           </a>
         </div>
       
@@ -2657,7 +2654,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day108/">
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day117_1/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Collins's Blog">
   </span>
@@ -2675,19 +2672,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day108/"  itemprop="url">
-        统计无向图中无法互相到达点对数
+      <a href="/p/leetcode/day117_1/"  itemprop="url">
+        员工的重要性
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        2316. 统计无向图中无法互相到达点对数题目描述：给你一个整数 n ，表示一张 无向图 中有 n 个节点，编号为 0 到 n - 1 。同时给你一个二维整数数组 edges ，其中 edges[i] = [ai, bi] 表示节点 ai 和 bi 之间有一条 无向 边。
-请你返回 无法互相到达 的不同 点对数目 。
-示例：示例 1：
+        690. 员工的重要性题目描述：你有一个保存员工信息的数据结构，它包含了员工唯一的 id ，重要度和直系下属的 id 。
+给定一个员工数组 employees，其中：
 
-123输入：n = 3, edges = [[0,1]...
+employees[i].id 是第 i 个员工的 ID。
+employees[i].importance 是第 i 个员工的重要度。
+employees[i].subordinates 是第 i 名员工的直接下属的 ID ...
       
     
   </div>
@@ -2703,7 +2701,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             <meta itemprop="url" content="/">
           </span>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-08-10T00:00:00+08:00">2024-08-10</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-08-27T00:00:00+08:00">2024-08-27</time>
         
           <span class="dot"></span>
           <a class="category-link" href="/categories/leetcode/">leetcode</a>
@@ -2716,8 +2714,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       </div>
       
         <div>
-          <a class='readmore' href='/p/leetcode/day108/' itemprop="url">
-            閱讀全文
+          <a class='readmore' href='/p/leetcode/day117_1/' itemprop="url">
+            阅读全文
           </a>
         </div>
       
@@ -2732,7 +2730,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day107/">
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day118/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Collins's Blog">
   </span>
@@ -2750,94 +2748,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day107/"  itemprop="url">
-        网格图中鱼的最大数目
+      <a href="/p/leetcode/day118/"  itemprop="url">
+        拓扑排序
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        2658. 网格图中鱼的最大数目题目描述：给你一个下标从 0 开始大小为 m x n 的二维整数数组 grid ，其中下标在 (r, c) 处的整数表示：
-
-如果 grid[r][c] = 0 ，那么它是一块 陆地 。
-如果 grid[r][c] &gt; 0 ，那么它是一块 水域 ，且包含 grid[r][c] 条鱼。
-
-一位渔夫可以从任意 水域 格子 (r, c) 出发，然后执行以下操作...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-            <meta itemprop="name" content="Collins">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-08-09T00:00:00+08:00">2024-08-09</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/leetcode/">leetcode</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/leetcode/" itemprop="url"><span itemprop="name">leetcode</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/p/leetcode/day107/' itemprop="url">
-            閱讀全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day106/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Collins's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Collins's Blog">
-    <meta itemprop="description" content="且行且珍惜">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day106/"  itemprop="url">
-        建造最大岛屿
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        104. 建造最大岛屿题目描述：给定一个由 1（陆地）和 0（水）组成的矩阵，你最多可以将矩阵中的一格水变为一块陆地，在执行了此操作之后，矩阵中最大的岛屿面积是多少。
-岛屿面积的计算方式为组成岛屿的陆地的总数。岛屿是被水包围，并且通过水平方向或垂直方向上相邻的陆地连接而成的。你可以假设矩阵外均被水包围。
+        \117. 软件构建题目描述：某个大型软件项目的构建系统拥有 N 个文件，文件编号从 0 到 N - 1，在这些文件中，某些文件依赖于其他文件的内容，这意味着如果文件 A 依赖于文件 B，则必须在处理文件 A 之前处理文件 B （0 &lt;&#x3D; A, B &lt;&#x3D; N - 1）。请编写一个算法，用于确定文件处理的顺序。
 示例：输入描述
-第一行包含两个整数 N, M，表示矩阵的行数和列数。之后 N 行，每行包...
+第一行输入两个正整数 N, M。表...
       
     
   </div>
@@ -2853,7 +2774,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             <meta itemprop="url" content="/">
           </span>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-08-08T00:00:00+08:00">2024-08-08</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-08-27T00:00:00+08:00">2024-08-27</time>
         
           <span class="dot"></span>
           <a class="category-link" href="/categories/leetcode/">leetcode</a>
@@ -2866,8 +2787,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       </div>
       
         <div>
-          <a class='readmore' href='/p/leetcode/day106/' itemprop="url">
-            閱讀全文
+          <a class='readmore' href='/p/leetcode/day118/' itemprop="url">
+            阅读全文
           </a>
         </div>
       
@@ -2882,7 +2803,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day105/">
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day117/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Collins's Blog">
   </span>
@@ -2900,17 +2821,18 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day105/"  itemprop="url">
-        找到所有的农场组
+      <a href="/p/leetcode/day117/"  itemprop="url">
+        Prim算法 & Kruskal算法
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        1992. 找到所有的农场组题目描述：给你一个下标从 0 开始，大小为 m x n 的二进制矩阵 land ，其中 0 表示一单位的森林土地，1 表示一单位的农场土地。
-为了让农场保持有序，农场土地之间以矩形的 农场组 的形式存在。每一个农场组都 仅 包含农场土地。且题目保证不会有两个农场组相邻，也就是说一个农场组中的任何一块土地都 不会 与另一个农场组的任何一块土地在四个方向上相邻。
-la...
+        53. 寻宝题目描述：在世界的某个区域，有一些分散的神秘岛屿，每个岛屿上都有一种珍稀的资源或者宝藏。国王打算在这些岛屿上建公路，方便运输。
+不同岛屿之间，路途距离不同，国王希望你可以规划建公路的方案，如何可以以最短的总公路距离将 所有岛屿联通起来（注意：这是一个无向图）。 
+给定一张地图，其中包括了所有的岛屿，以及它们之间的距离。以最小化公路建设长度，确保可以链接到所有岛屿。
+示例：输入描述...
       
     
   </div>
@@ -2926,7 +2848,7 @@ la...
             <meta itemprop="url" content="/">
           </span>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-08-07T00:00:00+08:00">2024-08-07</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-08-27T00:00:00+08:00">2024-08-27</time>
         
           <span class="dot"></span>
           <a class="category-link" href="/categories/leetcode/">leetcode</a>
@@ -2939,8 +2861,8 @@ la...
       </div>
       
         <div>
-          <a class='readmore' href='/p/leetcode/day105/' itemprop="url">
-            閱讀全文
+          <a class='readmore' href='/p/leetcode/day117/' itemprop="url">
+            阅读全文
           </a>
         </div>
       
@@ -2955,7 +2877,7 @@ la...
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day104/">
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day116/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Collins's Blog">
   </span>
@@ -2973,16 +2895,17 @@ la...
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day104/"  itemprop="url">
-        水流问题
+      <a href="/p/leetcode/day116/"  itemprop="url">
+        冗余连接II
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        103. 水流问题题目描述：现有一个 N × M 的矩阵，每个单元格包含一个数值，这个数值代表该位置的相对高度。矩阵的左边界和上边界被认为是第一组边界，而矩阵的右边界和下边界被视为第二组边界。
-矩阵模拟了一个地形，当雨水落在上面时，水会根据地形的倾斜向低处流动，但只能从较高或等高的地点流向较低或等高并且相邻（上下左右方向）的地点。我们的目标是确定那些单元格，从这些单元格出发的水可以达到第一组...
+        109. 冗余连接II题目描述：有向树指满足以下条件的有向图。该树只有一个根节点，所有其他节点都是该根节点的后继。该树除了根节点之外的每一个节点都有且只有一个父节点，而根节点没有父节点。有根树拥有 n 个节点和 n - 1 条边。 
+输入一个有向图，该图由一个有着 n 个节点(节点编号 从 1 到 n)，n 条边，请返回一条可以删除的边，使得删除该条边之后该有向图可以被当作一颗有向树。
+示例...
       
     
   </div>
@@ -2998,7 +2921,7 @@ la...
             <meta itemprop="url" content="/">
           </span>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-08-06T00:00:00+08:00">2024-08-06</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-08-26T00:00:00+08:00">2024-08-26</time>
         
           <span class="dot"></span>
           <a class="category-link" href="/categories/leetcode/">leetcode</a>
@@ -3011,8 +2934,8 @@ la...
       </div>
       
         <div>
-          <a class='readmore' href='/p/leetcode/day104/' itemprop="url">
-            閱讀全文
+          <a class='readmore' href='/p/leetcode/day116/' itemprop="url">
+            阅读全文
           </a>
         </div>
       
@@ -3027,7 +2950,7 @@ la...
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day103/">
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day119/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Collins's Blog">
   </span>
@@ -3045,19 +2968,19 @@ la...
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day103/"  itemprop="url">
-        沉没孤岛
+      <a href="/p/leetcode/day119/"  itemprop="url">
+        dijkstra算法
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        102. 沉没孤岛题目描述：给定一个由 1（陆地）和 0（水）组成的矩阵，岛屿指的是由水平或垂直方向上相邻的陆地单元格组成的区域，且完全被水域单元格包围。孤岛是那些位于矩阵内部、所有单元格都不接触边缘的岛屿。
-现在你需要将所有孤岛“沉没”，即将孤岛中的所有陆地单元格（1）转变为水域单元格（0）。
+        47. 参加科学大会题目描述：小明是一位科学家，他需要参加一场重要的国际科学大会，以展示自己的最新研究成果。
+小明的起点是第一个车站，终点是最后一个车站。然而，途中的各个车站之间的道路状况、交通拥堵程度以及可能的自然因素（如天气变化）等不同，这些因素都会影响每条路径的通行时间。
+小明希望能选择一条花费时间最少的路线，以确保他能够尽快到达目的地。
 示例：输入描述
-第一行包含两个整数 N, M，表示矩阵的行数和列数。
-之后 N 行，每行包含 M...
+第一行包含两个正整数，第一个正...
       
     
   </div>
@@ -3073,7 +2996,7 @@ la...
             <meta itemprop="url" content="/">
           </span>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-08-05T00:00:00+08:00">2024-08-05</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-08-19T00:00:00+08:00">2024-08-19</time>
         
           <span class="dot"></span>
           <a class="category-link" href="/categories/leetcode/">leetcode</a>
@@ -3086,8 +3009,8 @@ la...
       </div>
       
         <div>
-          <a class='readmore' href='/p/leetcode/day103/' itemprop="url">
-            閱讀全文
+          <a class='readmore' href='/p/leetcode/day119/' itemprop="url">
+            阅读全文
           </a>
         </div>
       
@@ -3102,7 +3025,7 @@ la...
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day102/">
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day115/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Collins's Blog">
   </span>
@@ -3120,18 +3043,20 @@ la...
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day102/"  itemprop="url">
-        孤岛的总面积
+      <a href="/p/leetcode/day115/"  itemprop="url">
+        冗余连接
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        101. 孤岛的总面积题目描述：给定一个由 1（陆地）和 0（水）组成的矩阵，岛屿指的是由水平或垂直方向上相邻的陆地单元格组成的区域，且完全被水域单元格包围。孤岛是那些位于矩阵内部、所有单元格都不接触边缘的岛屿。
-现在你需要计算所有孤岛的总面积，岛屿面积的计算方式为组成岛屿的陆地的总数。
+        108. 冗余连接题目描述：树可以看成是一个图（拥有 n 个节点和 n - 1 条边的连通无环无向图）。 
+现给定一个拥有 n 个节点（节点标号是从 1 到 n）和 n 条边的连通无向图，请找出一条可以删除的边，删除后图可以变成一棵树。
 示例：输入描述
-第一行包含两个整数 N, M，表示矩阵的行数和列数。之后 N 行，每行包含 M 个数字，...
+第一行包含一个整数 N，表示图的节点个数和边的个数。
+后续 N 行，每行包含两个整数 s 和 t，表示图中 s 和 t 之间有一条边。
+输出...
       
     
   </div>
@@ -3147,7 +3072,7 @@ la...
             <meta itemprop="url" content="/">
           </span>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-08-04T00:00:00+08:00">2024-08-04</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-08-17T00:00:00+08:00">2024-08-17</time>
         
           <span class="dot"></span>
           <a class="category-link" href="/categories/leetcode/">leetcode</a>
@@ -3160,8 +3085,8 @@ la...
       </div>
       
         <div>
-          <a class='readmore' href='/p/leetcode/day102/' itemprop="url">
-            閱讀全文
+          <a class='readmore' href='/p/leetcode/day115/' itemprop="url">
+            阅读全文
           </a>
         </div>
       
@@ -3176,7 +3101,7 @@ la...
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day101/">
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day114/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Collins's Blog">
   </span>
@@ -3194,19 +3119,20 @@ la...
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day101/"  itemprop="url">
-        岛屿的最大面积
+      <a href="/p/leetcode/day114/"  itemprop="url">
+        寻找存在的路径
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        100. 岛屿的最大面积题目描述：给定一个由 1（陆地）和 0（水）组成的矩阵，计算岛屿的最大面积。岛屿面积的计算方式为组成岛屿的陆地的总数。岛屿由水平方向或垂直方向上相邻的陆地连接而成，并且四周都是水域。你可以假设矩阵外均被水包围。
+        107. 寻找存在的路径题目描述：给定一个包含 n 个节点的无向图中，节点编号从 1 到 n （含 1 和 n ）。
+你的任务是判断是否有一条从节点 source 出发到节点 destination 的路径存在。
 示例：输入描述
-第一行包含两个整数 N, M，表示矩阵的行数和列数。后续 N 行，每行包含 M 个数字，数字为 1 或者 0，表示岛屿的单元格。
-输出描述
-输...
+第一行包含两个正整数 N 和 M，N 代表节点的个数，M 代表边的个数。 
+后续 M 行，每行两个正整数 s 和 t，代表从节点 s 与节点 t 之间有一条边。 
+...
       
     
   </div>
@@ -3222,7 +3148,7 @@ la...
             <meta itemprop="url" content="/">
           </span>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-08-03T00:00:00+08:00">2024-08-03</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-08-16T00:00:00+08:00">2024-08-16</time>
         
           <span class="dot"></span>
           <a class="category-link" href="/categories/leetcode/">leetcode</a>
@@ -3235,8 +3161,8 @@ la...
       </div>
       
         <div>
-          <a class='readmore' href='/p/leetcode/day101/' itemprop="url">
-            閱讀全文
+          <a class='readmore' href='/p/leetcode/day114/' itemprop="url">
+            阅读全文
           </a>
         </div>
       
@@ -3251,7 +3177,7 @@ la...
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day100_1/">
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day113/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Collins's Blog">
   </span>
@@ -3269,21 +3195,22 @@ la...
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day100_1/"  itemprop="url">
-        广度优先搜索理论
+      <a href="/p/leetcode/day113/"  itemprop="url">
+        并查集理论
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        广度优先搜索一圈一圈地进行搜索：
+        并查集理论并查集两个主要功能：
 
-代码框架保存遍历过的元素：队列、栈、数组都可以
-队列：先进先出，需要保证每一圈都是一个方向去转
-栈：先进后出：第一圈顺时针、第二圈逆时针、第三圈顺时针……
-广度优先搜索不需要注意 转圈搜索顺序！！
-1234567891011121314151617181920212223int dir[4][2] = &#123;0, 1, 1, 0, -1, 0, 0,...
+将两个元素调价到一个集合中
+判断两个元素在不在同一个集合
+
+基本原理将三个元素A、B、C放在同个一集合中，其实就是将三个元素连通在一起，如何连通呢？
+只需要用一个一维数组表示：father[A] &#x3D; B, father[B] &#x3D; C 这样就表述A与B与C连通了（有向连通图）
+1234567// 将v、u两个节点所在集合 两个集合void ...
       
     
   </div>
@@ -3299,7 +3226,7 @@ la...
             <meta itemprop="url" content="/">
           </span>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-08-02T00:00:00+08:00">2024-08-02</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-08-15T00:00:00+08:00">2024-08-15</time>
         
           <span class="dot"></span>
           <a class="category-link" href="/categories/leetcode/">leetcode</a>
@@ -3312,8 +3239,81 @@ la...
       </div>
       
         <div>
-          <a class='readmore' href='/p/leetcode/day100_1/' itemprop="url">
-            閱讀全文
+          <a class='readmore' href='/p/leetcode/day113/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day112/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Collins's Blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Collins's Blog">
+    <meta itemprop="description" content="且行且珍惜">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/p/leetcode/day112/"  itemprop="url">
+        图像渲染
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        733. 图像渲染题目描述：有一幅以 m x n 的二维整数数组表示的图画 image ，其中 image[i][j] 表示该图画的像素值大小。
+你也被给予三个整数 sr , sc 和 newColor 。你应该从像素 image[sr][sc] 开始对图像进行 上色填充 。
+为了完成 上色工作 ，从初始像素开始，记录初始坐标的 上下左右四个方向上 像素值与初始坐标相同的相连像素点，接着再记...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+            <meta itemprop="name" content="Collins">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-08-14T00:00:00+08:00">2024-08-14</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/leetcode/">leetcode</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/leetcode/" itemprop="url"><span itemprop="name">leetcode</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/p/leetcode/day112/' itemprop="url">
+            阅读全文
           </a>
         </div>
       
@@ -3334,17 +3334,17 @@ la...
         
           <a class="prev" rel="prev" href="/categories/leetcode/page/2/">
             <section class="post prev white-box shadow" >
-              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>&nbsp;上一頁&nbsp;
+              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页&nbsp;
             </section>
           </a>
         
         <p class="current">
-          3 / 8
+          3 / 10
         </p>
         
           <a class="next" rel="next" href="/categories/leetcode/page/4/">
             <section class="post next white-box shadow">
-              &nbsp;下一頁&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              &nbsp;下一页&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
             </section>
           </a>
         
@@ -3454,7 +3454,7 @@ la...
           <li><a class="flat-box"
             title="/categories/leetcode/" href="/categories/leetcode/"
             active-action="action-categoriesleetcode"
-            ><div class='name'>leetcode</div><div class='badge'>(79)</div></a></li>
+            ><div class='name'>leetcode</div><div class='badge'>(91)</div></a></li>
         
       </ul>
     </div>
@@ -3490,7 +3490,7 @@ la...
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>134 篇</div>
+          <div>146 篇</div>
         </div>
       
 
@@ -3505,7 +3505,7 @@ la...
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>142.8k 字</div>
+          <div>147.4k 字</div>
         </div>
       
 
@@ -3516,7 +3516,7 @@ la...
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2024-09-04 日</div>
+          <div id="last-update-show">2024-10-02 日</div>
         </div>
       
     </div>
@@ -3541,7 +3541,7 @@ la...
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/p/leetcode/day125/"><div class="item"><time>2024-09-04</time><span>leetcode</span></div><span>让所有学生保持开心的分组方法数</span></a></li><li><a class="widget-last" href="/p/leetcode/day124/"><div class="item"><time>2024-09-04</time><span>leetcode</span></div><span>一个小组的最大实力值</span></a></li><li><a class="widget-last" href="/p/leetcode/day123/"><div class="item"><time>2024-09-03</time><span>leetcode</span></div><span>滑动窗口</span></a></li><li><a class="widget-last" href="/p/leetcode/day123_1/"><div class="item"><time>2024-09-02</time></div><span>图论总结</span></a></li><li><a class="widget-last" href="/p/leetcode/day122_1/"><div class="item"><time>2024-09-02</time><span>leetcode</span></div><span>最短路算法总结</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/p/leetcode/day138/"><div class="item"><time>2024-09-18</time><span>leetcode</span></div><span>公交路线</span></a></li><li><a class="widget-last" href="/p/leetcode/day132/"><div class="item"><time>2024-09-12</time><span>leetcode</span></div><span>两个线段获得的最多奖品</span></a></li><li><a class="widget-last" href="/p/leetcode/day131/"><div class="item"><time>2024-09-12</time><span>leetcode</span></div><span>统计上升四元组</span></a></li><li><a class="widget-last" href="/p/leetcode/day133/"><div class="item"><time>2024-09-12</time><span>leetcode</span></div><span>求出最多标记下标</span></a></li><li><a class="widget-last" href="/p/leetcode/day129/"><div class="item"><time>2024-09-09</time><span>leetcode</span></div><span>盛最多水的容器</span></a></li></ul>
   </div>
 </section>
 
@@ -3655,7 +3655,7 @@ la...
       
     
       
-        <div><p>博客內容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW">姓名標示-非商業性-相同方式分享 4.0 國際 (CC BY-NC-SA 4.0) 協議</a></p>
+        <div><p>博客内容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
 </div>
       
     
@@ -3669,7 +3669,7 @@ la...
       
         本站使用
         <a href="https://github.com/volantis-x/hexo-theme-volantis/#5.8.0" target="_blank" class="codename">Volantis</a>
-        作為主題
+        作为主题
       
     
       

@@ -1745,9 +1745,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的瀏覽器無法訪問本站</b></span><br/>`+
-        `<span class="kill-c">微軟已經於2016年終止了對 Internet Explorer (IE) 10 及更早版本的支持，<br/>繼續使用存在極大的安全隱患，請使用當代主流的瀏覽器進行訪問。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解詳情 ></strong></a>`+
+        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
+        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
     '</div>');
 </script>
 
@@ -1775,9 +1775,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的瀏覽器無法訪問本站</b></span><br/>
-        <span class="kill-c">本頁面需要瀏覽器支持（啟用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解詳情 ></strong></a>
+        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
+        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
     </div>
 </noscript>
 
@@ -1792,7 +1792,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/app.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/parallax.js","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/rightMenu.js","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/rightMenus.js","sites":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/sites.js","friends":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/friends.js","contributors":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/contributors.js","search":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1725457055035),
+    lastupdate: new Date(1727857667422),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2579,7 +2579,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day24/">
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day35/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Collins's Blog">
   </span>
@@ -2597,428 +2597,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day24/"  itemprop="url">
-        Apr 19, 2024
+      <a href="/p/leetcode/day35/"  itemprop="url">
+        May 1, 2024
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        28. 找出字符串中第一个匹配项的下标题目描述：给你两个字符串 haystack 和 needle ，请你在 haystack 字符串中找出 needle 字符串的第一个匹配项的下标（下标从 0 开始）。如果 needle 不是 haystack 的一部分，则返回 -1 。
-示例：示例 1：
-1234输入：haystack = &quot;sadbutsad&quot;, needle = ...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-            <meta itemprop="name" content="Collins">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-04-19T10:09:56+08:00">2024-04-19</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/p/leetcode/day24/' itemprop="url">
-            閱讀全文
-          </a>
-        </div>
-      
-    </div>
-  
+        110. 平衡二叉树题目描述：给定一个二叉树，判断它是否是 平衡二叉树 
 
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day23/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Collins's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Collins's Blog">
-    <meta itemprop="description" content="且行且珍惜">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day23/"  itemprop="url">
-        Apr 19, 2024
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        151. 反转字符串中的单词题目描述：给你一个字符串 s ，请你反转字符串中 单词 的顺序。
-单词 是由非空格字符组成的字符串。s 中使用至少一个空格将字符串中的 单词 分隔开。
-返回 单词 顺序颠倒且 单词 之间用单个空格连接的结果字符串。
-注意：输入字符串 s中可能会存在前导空格、尾随空格或者单词间的多个空格。返回的结果字符串中，单词间应当仅用单个空格分隔，且不包含任何额外的空格。
-示例...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-            <meta itemprop="name" content="Collins">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-04-19T10:09:42+08:00">2024-04-19</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/p/leetcode/day23/' itemprop="url">
-            閱讀全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day22/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Collins's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Collins's Blog">
-    <meta itemprop="description" content="且行且珍惜">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day22/"  itemprop="url">
-        Apr 17, 2024
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        541. 反转字符串 II题目描述：给定一个字符串 s 和一个整数 k，从字符串开头算起，每计数至 2k 个字符，就反转这 2k 字符中的前 k 个字符。
-
-如果剩余字符少于 k 个，则将剩余字符全部反转。
-如果剩余字符小于 2k 但大于或等于 k 个，则反转前 k 个字符，其余字符保持原样。
+平衡二叉树：指该树所有节点的左右子树的深度相差不超过1
 
 示例：示例 1：
-12输入：s = &quot;abcdefg&quot;, k = 2输出：&...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-            <meta itemprop="name" content="Collins">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-04-17T17:19:15+08:00">2024-04-17</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/p/leetcode/day22/' itemprop="url">
-            閱讀全文
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day21/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Collins's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Collins's Blog">
-    <meta itemprop="description" content="且行且珍惜">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day21/"  itemprop="url">
-        Apr 16, 2024
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        344. 反转字符串题目描述：编写一个函数，其作用是将输入的字符串反转过来。输入字符串以字符数组 s 的形式给出。
-不要给另外的数组分配额外的空间，你必须**原地修改输入数组**、使用 O(1) 的额外空间解决这一问题。
-示例：示例 1：
-12输入：s = [&quot;h&quot;,&quot;e&quot;,&quot;l&quot;,&quot;l&quot;,&quot;o&quo...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-            <meta itemprop="name" content="Collins">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-04-16T14:22:02+08:00">2024-04-16</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/p/leetcode/day21/' itemprop="url">
-            閱讀全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day20/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Collins's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Collins's Blog">
-    <meta itemprop="description" content="且行且珍惜">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day20/"  itemprop="url">
-        Apr 15, 2024
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        454. 四数相加 II题目描述：给你四个整数数组 nums1、nums2、nums3 和 nums4 ，数组长度都是 n ，请你计算有多少个元组 (i, j, k, l) 能满足：
-
-0 &lt;= i, j, k, l &lt; n
-nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0
-
-示例：示例 1：
-123456输入：nums1 = [1,2...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-            <meta itemprop="name" content="Collins">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-04-15T10:17:49+08:00">2024-04-15</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/p/leetcode/day20/' itemprop="url">
-            閱讀全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day19/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Collins's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Collins's Blog">
-    <meta itemprop="description" content="且行且珍惜">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day19/"  itemprop="url">
-        Apr 15, 2024
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        202. 快乐数题目描述：编写一个算法来判断一个数 n 是不是快乐数。
-「快乐数」 定义为：
-
-对于一个正整数，每一次将该数替换为它每个位置上的数字的平方和。
-然后重复这个过程直到这个数变为 1，也可能是 无限循环 但始终变不到 1。
-如果这个过程 结果为 1，那么这个数就是快乐数。
-
-如果 n 是 快乐数 就返回 true ；不是，则返回 false 。
-示例：示例 1：
-1234567输...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-            <meta itemprop="name" content="Collins">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-04-15T09:38:00+08:00">2024-04-15</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/p/leetcode/day19/' itemprop="url">
-            閱讀全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day18/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Collins's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Collins's Blog">
-    <meta itemprop="description" content="且行且珍惜">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day18/"  itemprop="url">
-        Apr 13, 2024
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        349. 两个数组的交集题目描述：给定两个数组 nums1 和 nums2 ，返回 它们的 交集 。输出结果中的每个元素一定是 唯一 的。我们可以 不考虑输出结果的顺序 。
-示例：示例 1：
-12输入：nums1 = [1,2,2,1], nums2 = [2,2]输出：[2]
+12输入：root = [3,9,20,null,null,15,7]输出：true
 
 示例 2：
-123输入：nums1 = [4,9,5], nums2 = [9,4,9,8,4]输出：[9,4]...
+
+12输入：root = [1,2,2,3,3,null,null,4,4]输出：false
+
+示例 3：
+12输入：root = []输出...
       
     
   </div>
@@ -3034,13 +2634,13 @@ nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0
             <meta itemprop="url" content="/">
           </span>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-04-13T09:42:52+08:00">2024-04-13</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-05-01T16:47:20+08:00">2024-05-01</time>
         
       </div>
       
         <div>
-          <a class='readmore' href='/p/leetcode/day18/' itemprop="url">
-            閱讀全文
+          <a class='readmore' href='/p/leetcode/day35/' itemprop="url">
+            阅读全文
           </a>
         </div>
       
@@ -3055,7 +2655,7 @@ nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day17/">
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day36/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Collins's Blog">
   </span>
@@ -3073,21 +2673,307 @@ nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day17/"  itemprop="url">
-        Apr 12, 2024
+      <a href="/p/leetcode/day36/"  itemprop="url">
+        May 1, 2024
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        242. 有效的字母异位词题目描述：给定两个字符串 *s* 和 *t* ，编写一个函数来判断 *t* 是否是 *s* 的字母异位词。
-注意：若 *s* 和 *t* 中每个字符出现的次数都相同，则称 *s* 和 *t* 互为字母异位词。
+        257. 二叉树的所有路径题目描述：给你一个二叉树的根节点 root ，按 任意顺序 ，返回所有从根节点到叶子节点的路径。
+叶子节点 是指没有子节点的节点。
+示例：示例 1：
+
+12输入：root = [1,2,3,null,5]输出：[&quot;1-&gt;2-&gt;5&quot;,&quot;1-&gt;3&quot;]
+
+示例 2：
+12输入：root = [1]输出：[&quot...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+            <meta itemprop="name" content="Collins">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-05-01T00:00:00+08:00">2024-05-01</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/p/leetcode/day36/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day34/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Collins's Blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Collins's Blog">
+    <meta itemprop="description" content="且行且珍惜">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/p/leetcode/day34/"  itemprop="url">
+        Apr 29, 2024
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        222. 完全二叉树的节点个数题目描述：你一棵 完全二叉树 的根节点 root ，求出该树的节点个数。
+完全二叉树 的定义如下：在完全二叉树中，除了最底层节点可能没填满外，其余每层节点数都达到最大值，并且最下面一层的节点都集中在该层最左边的若干位置。若最底层为第 h 层，则该层包含 1~ 2h 个节点。
+示例：示例 1：
+
+12输入：root = [1,2,3,4,5,6]输出：6
+
+示例 ...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+            <meta itemprop="name" content="Collins">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-04-29T23:33:52+08:00">2024-04-29</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/p/leetcode/day34/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day33/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Collins's Blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Collins's Blog">
+    <meta itemprop="description" content="且行且珍惜">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/p/leetcode/day33/"  itemprop="url">
+        Apr 28, 2024
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        100. 相同的树题目描述：给你两棵二叉树的根节点 p 和 q ，编写一个函数来检验这两棵树是否相同。
+如果两个树在结构上相同，并且节点具有相同的值，则认为它们是相同的。
+示例：示例 1：
+
+12输入：p = [1,2,3], q = [1,2,3]输出：true
+
+示例 2：
+
+12输入：p = [1,2], q = [1,null,2]输出：false
+
+示例 3：
+
+12输入：p = ...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+            <meta itemprop="name" content="Collins">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-04-28T14:38:18+08:00">2024-04-28</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/p/leetcode/day33/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day32/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Collins's Blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Collins's Blog">
+    <meta itemprop="description" content="且行且珍惜">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/p/leetcode/day32/"  itemprop="url">
+        Apr 28, 2024
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        116. 填充每个节点的下一个右侧节点指针题目描述：给定一个 完美二叉树 ，其所有叶子节点都在同一层，每个父节点都有两个子节点。二叉树定义如下：
+123456struct Node &#123;  int val;  Node *left;  Node *right;  Node *next;&#125;
+
+填充它的每个 next 指针，让这个指针指向其下一个右侧节点。如果找不到下一个右侧节...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+            <meta itemprop="name" content="Collins">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-04-28T14:37:24+08:00">2024-04-28</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/p/leetcode/day32/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day31/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Collins's Blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Collins's Blog">
+    <meta itemprop="description" content="且行且珍惜">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/p/leetcode/day31/"  itemprop="url">
+        Apr 26, 2024
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        199. 二叉树的右视图题目描述：给定一个二叉树的 根节点 root，想象自己站在它的右侧，按照从顶部到底部的顺序，返回从右侧所能看到的节点值。
 示例：示例 1:
-12输入: s = &quot;anagram&quot;, t = &quot;nagaram&quot;输出: true
+
+12输入: [1,2,3,null,5,null,4]输出: [1,3,4]
 
 示例 2:
-...
+12输入: [1,null,3]输出: [1,3]
+
+示例 3:
+12输入: []输出: []
+
+提示:
+二叉树的节点个数的范围是 [0...
       
     
   </div>
@@ -3103,13 +2989,13 @@ nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0
             <meta itemprop="url" content="/">
           </span>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-04-12T23:15:16+08:00">2024-04-12</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-04-26T09:05:38+08:00">2024-04-26</time>
         
       </div>
       
         <div>
-          <a class='readmore' href='/p/leetcode/day17/' itemprop="url">
-            閱讀全文
+          <a class='readmore' href='/p/leetcode/day31/' itemprop="url">
+            阅读全文
           </a>
         </div>
       
@@ -3124,7 +3010,7 @@ nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day16/">
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day30/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Collins's Blog">
   </span>
@@ -3142,30 +3028,26 @@ nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day16/"  itemprop="url">
-        Apr 11, 2024
+      <a href="/p/leetcode/day30/"  itemprop="url">
+        Apr 25, 2024
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        61. 旋转链表题目描述：给你一个链表的头节点 head ，旋转链表，将链表每个节点向右移动 k 个位置。
+        102. 二叉树的层序遍历题目描述：给你二叉树的根节点 root ，返回其节点值的 层序遍历 。 （即逐层地，从左到右访问所有节点）。
 示例：示例 1：
 
-12输入：head = [1,2,3,4,5], k = 2输出：[4,5,1,2,3]
+12输入：root = [3,9,20,null,null,15,7]输出：[[3],[9,20],[15,7]]
 
 示例 2：
+12输入：root = [1]输出：[[1]]
 
-12输入：head = [0,1,2], k = 4输出：[2,0,1]
+示例 3：
+12输入：root = []输出：[]
 
-
-
-
-
-提示：
-链表中节点的数目在范围 [0, 500] 内
--100 &lt;= ...
+提示...
       
     
   </div>
@@ -3181,13 +3063,13 @@ nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0
             <meta itemprop="url" content="/">
           </span>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-04-11T09:46:47+08:00">2024-04-11</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-04-25T16:56:34+08:00">2024-04-25</time>
         
       </div>
       
         <div>
-          <a class='readmore' href='/p/leetcode/day16/' itemprop="url">
-            閱讀全文
+          <a class='readmore' href='/p/leetcode/day30/' itemprop="url">
+            阅读全文
           </a>
         </div>
       
@@ -3202,7 +3084,7 @@ nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day15/">
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day29/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Collins's Blog">
   </span>
@@ -3220,30 +3102,28 @@ nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/p/leetcode/day15/"  itemprop="url">
-        Apr 10, 2024
+      <a href="/p/leetcode/day29/"  itemprop="url">
+        Apr 24, 2024
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        83. 删除排序链表中的重复元素题目描述：给定一个已排序的链表的头 head ， 删除所有重复的元素，使每个元素只出现一次 。返回 已排序的链表 。
-示例：示例 1：
+        
+递归三要素
+确定递归函数的参数和返回值
+  确定哪些参数是递归过程中需要处理的，就这递归函数里加上这个参数，并明确每次递归的返回值是什么进而确定递归函数的返回类型
 
-12输入：head = [1,1,2]输出：[1,2]
+确定终止条件
 
-示例 2：
-
-12输入：head = [1,1,2,3,3]输出：[1,2,3]
-
-
-
+确定单层递归逻辑
+  确定每层递归需要处理的信息，即递归的主体：重复调用自己来实现递归过程。
 
 
-提示：
-链表中节点数目在范围 [0, 300] 内
--100 &lt;= ...
+144. 二叉树的前序遍历题目描述：示例：示例 1：
+
+12输入：root = [1,null,2,3]输出：[...
       
     
   </div>
@@ -3259,13 +3139,156 @@ nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0
             <meta itemprop="url" content="/">
           </span>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-04-10T09:39:33+08:00">2024-04-10</time>
+        <time itemprop="dateCreated datePublished" datetime="2024-04-24T13:52:37+08:00">2024-04-24</time>
         
       </div>
       
         <div>
-          <a class='readmore' href='/p/leetcode/day15/' itemprop="url">
-            閱讀全文
+          <a class='readmore' href='/p/leetcode/day29/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day28/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Collins's Blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Collins's Blog">
+    <meta itemprop="description" content="且行且珍惜">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/p/leetcode/day28/"  itemprop="url">
+        Apr 23, 2024
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        347. 前 K 个高频元素题目描述：给你一个整数数组 nums 和一个整数 k ，请你返回其中出现频率前 k 高的元素。你可以按 任意顺序 返回答案。
+示例：示例 1:
+12输入: nums = [1,1,1,2,2,3], k = 2输出: [1,2]
+
+示例 2:
+12输入: nums = [1], k = 1输出: [1]
+
+提示：
+1 &lt;= nums.length &lt;=...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+            <meta itemprop="name" content="Collins">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-04-23T14:11:31+08:00">2024-04-23</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/p/leetcode/day28/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://krystencollins.github.io/p/leetcode/day27/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Collins's Blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Collins's Blog">
+    <meta itemprop="description" content="且行且珍惜">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/p/leetcode/day27/"  itemprop="url">
+        Apr 22, 2024
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        155. 最小栈题目描述：设计一个支持 push ，pop ，top 操作，并能在常数时间内检索到最小元素的栈。
+实现 MinStack 类:
+
+MinStack() 初始化堆栈对象。
+void push(int val) 将元素val推入堆栈。
+void pop() 删除堆栈顶部的元素。
+int top() 获取堆栈顶部的元素。
+int getMin() 获取堆栈中的最小元素。
+
+示例：示...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png">
+            <meta itemprop="name" content="Collins">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2024-04-22T21:39:58+08:00">2024-04-22</time>
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/p/leetcode/day27/' itemprop="url">
+            阅读全文
           </a>
         </div>
       
@@ -3286,17 +3309,17 @@ nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0
         
           <a class="prev" rel="prev" href="/page/11/">
             <section class="post prev white-box shadow" >
-              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>&nbsp;上一頁&nbsp;
+              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页&nbsp;
             </section>
           </a>
         
         <p class="current">
-          12 / 14
+          12 / 15
         </p>
         
           <a class="next" rel="next" href="/page/13/">
             <section class="post next white-box shadow">
-              &nbsp;下一頁&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              &nbsp;下一页&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
             </section>
           </a>
         
@@ -3404,7 +3427,7 @@ nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0
           <li><a class="flat-box"
             title="/categories/leetcode/" href="/categories/leetcode/"
             active-action="action-categoriesleetcode"
-            ><div class='name'>leetcode</div><div class='badge'>(79)</div></a></li>
+            ><div class='name'>leetcode</div><div class='badge'>(91)</div></a></li>
         
       </ul>
     </div>
@@ -3440,7 +3463,7 @@ nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>134 篇</div>
+          <div>146 篇</div>
         </div>
       
 
@@ -3455,7 +3478,7 @@ nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>142.8k 字</div>
+          <div>147.4k 字</div>
         </div>
       
 
@@ -3466,7 +3489,7 @@ nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2024-09-04 日</div>
+          <div id="last-update-show">2024-10-02 日</div>
         </div>
       
     </div>
@@ -3491,7 +3514,7 @@ nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/p/leetcode/day125/"><div class="item"><time>2024-09-04</time><span>leetcode</span></div><span>让所有学生保持开心的分组方法数</span></a></li><li><a class="widget-last" href="/p/leetcode/day124/"><div class="item"><time>2024-09-04</time><span>leetcode</span></div><span>一个小组的最大实力值</span></a></li><li><a class="widget-last" href="/p/leetcode/day123/"><div class="item"><time>2024-09-03</time><span>leetcode</span></div><span>滑动窗口</span></a></li><li><a class="widget-last" href="/p/leetcode/day123_1/"><div class="item"><time>2024-09-02</time></div><span>图论总结</span></a></li><li><a class="widget-last" href="/p/leetcode/day122_1/"><div class="item"><time>2024-09-02</time><span>leetcode</span></div><span>最短路算法总结</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/p/leetcode/day138/"><div class="item"><time>2024-09-18</time><span>leetcode</span></div><span>公交路线</span></a></li><li><a class="widget-last" href="/p/leetcode/day132/"><div class="item"><time>2024-09-12</time><span>leetcode</span></div><span>两个线段获得的最多奖品</span></a></li><li><a class="widget-last" href="/p/leetcode/day131/"><div class="item"><time>2024-09-12</time><span>leetcode</span></div><span>统计上升四元组</span></a></li><li><a class="widget-last" href="/p/leetcode/day133/"><div class="item"><time>2024-09-12</time><span>leetcode</span></div><span>求出最多标记下标</span></a></li><li><a class="widget-last" href="/p/leetcode/day129/"><div class="item"><time>2024-09-09</time><span>leetcode</span></div><span>盛最多水的容器</span></a></li></ul>
   </div>
 </section>
 
@@ -3606,7 +3629,7 @@ nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0
       
     
       
-        <div><p>博客內容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW">姓名標示-非商業性-相同方式分享 4.0 國際 (CC BY-NC-SA 4.0) 協議</a></p>
+        <div><p>博客内容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
 </div>
       
     
@@ -3620,7 +3643,7 @@ nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0
       
         本站使用
         <a href="https://github.com/volantis-x/hexo-theme-volantis/#5.8.0" target="_blank" class="codename">Volantis</a>
-        作為主題
+        作为主题
       
     
       

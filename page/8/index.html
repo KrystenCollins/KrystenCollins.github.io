@@ -716,103 +716,6 @@ button {
   -moz-opacity: 1;
   border-bottom: 2px solid var(--color-site-inner);
 }
-.cover-wrapper.dock .menu,
-.cover-wrapper.featured .menu,
-.cover-wrapper.focus .menu {
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-}
-.cover-wrapper.dock .menu .list-h a,
-.cover-wrapper.featured .menu .list-h a,
-.cover-wrapper.focus .menu .list-h a {
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  align-items: center;
-  padding: 12px;
-  line-height: 24px;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-bottom: none;
-  text-align: center;
-  align-content: flex-end;
-  color: rgba(68,68,68,0.7);
-  font-size: 1.5rem;
-}
-@media screen and (max-width: 500px) {
-  .cover-wrapper.dock .menu .list-h a,
-  .cover-wrapper.featured .menu .list-h a,
-  .cover-wrapper.focus .menu .list-h a {
-    padding: 12px 8px;
-  }
-}
-.cover-wrapper.dock .menu .list-h a i,
-.cover-wrapper.featured .menu .list-h a i,
-.cover-wrapper.focus .menu .list-h a i {
-  margin: 8px;
-}
-.cover-wrapper.dock .menu .list-h a p,
-.cover-wrapper.featured .menu .list-h a p,
-.cover-wrapper.focus .menu .list-h a p {
-  font-size: 0.875rem;
-}
-.cover-wrapper.dock .menu .list-h a.active,
-.cover-wrapper.featured .menu .list-h a.active,
-.cover-wrapper.focus .menu .list-h a.active {
-  background: var(--color-card);
-  backdrop-filter: none;
-}
-.cover-wrapper.dock .menu .list-h a.active i,
-.cover-wrapper.featured .menu .list-h a.active i,
-.cover-wrapper.focus .menu .list-h a.active i,
-.cover-wrapper.dock .menu .list-h a.active i+p,
-.cover-wrapper.featured .menu .list-h a.active i+p,
-.cover-wrapper.focus .menu .list-h a.active i+p {
-  color: #3dd9b6;
-}
-.cover-wrapper.dock .menu .list-h a.active img+p,
-.cover-wrapper.featured .menu .list-h a.active img+p,
-.cover-wrapper.focus .menu .list-h a.active img+p {
-  color: var(--color-text);
-}
-.cover-wrapper.dock .menu .list-h a:hover,
-.cover-wrapper.featured .menu .list-h a:hover,
-.cover-wrapper.focus .menu .list-h a:hover {
-  background: var(--color-card);
-}
-.cover-wrapper.focus .menu {
-  transition: all 0.28s ease;
-  -webkit-transition: all 0.28s ease;
-  -khtml-transition: all 0.28s ease;
-  -moz-transition: all 0.28s ease;
-  -o-transition: all 0.28s ease;
-  -ms-transition: all 0.28s ease;
-}
-.cover-wrapper.focus .menu .list-h {
-  margin: 2px;
-}
-.cover-wrapper.focus .menu:hover {
-  background: rgba(255,255,255,0.5);
-}
-@supports (backdrop-filter: blur(20px)) {
-  .cover-wrapper.focus .menu:hover {
-    background: rgba(255,255,255,0.5);
-    backdrop-filter: saturate(200%) blur(20px);
-  }
-}
-.cover-wrapper.focus .menu .list-h a {
-  margin: 2px;
-}
-.cover-wrapper.focus .menu .list-h a:hover {
-  opacity: 1;
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  background: var(--color-card);
-}
 @media (prefers-color-scheme: dark) {
   :root {
     --color-mode: 'dark';
@@ -1842,9 +1745,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		'}'+
 	'</style>'+
     '<div class="kill-ie">'+
-        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
-        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
+        `<span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>`+
+        `<span class="kill-c">Microsoft has terminated support for Internet Explorer (IE) 10 and earlier versions in 2016. <br/>There are great security risks to continue using it. Please use contemporary mainstream browsers to access.</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>Learn more ></strong></a>`+
     '</div>');
 </script>
 
@@ -1872,9 +1775,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 		}
 	</style>
     <div class="kill-noscript">
-        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
-        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
-        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
+        <span class="kill-t"><b>Sorry, your browser cannot access this site</b></span><br/>
+        <span class="kill-c">This page requires browser support (enable) JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>Learn more ></strong></a>
     </div>
 </noscript>
 
@@ -1889,7 +1792,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/app.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/parallax.js","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/rightMenu.js","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/rightMenus.js","sites":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/sites.js","friends":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/friends.js","contributors":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/plugins/tags/contributors.js","search":"https://unpkg.com/hexo-theme-volantis@5.8.0/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202405061016346.png","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1773847150567),
+    lastupdate: new Date(1773848288768),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2321,7 +2224,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin end-->
     <!-- front-matter body_begin begin -->
     <!-- front-matter body_begin end -->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2592,9 +2495,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  focus' style="display: ;">
+      <div id="none" class='cover-wrapper  search' style="display: none;">
         
-  <div class='cover-bg lazyload placeholder' data-bg="https://baotangguo.cn:8081/"></div>
+  <div class='cover-bg lazyload placeholder' data-bg="https://typora-picgo-01.oss-cn-qingdao.aliyuncs.com/202407022237046.jpg"></div>
 
 <div class='cover-body'>
   <div class='top'>
@@ -2605,6 +2508,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   </div>
   <div class='bottom'>
+    
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <input type="text" class="input u-search-input" placeholder="Search..." />
+          <i class="icon fa-solid fa-search fa-fw"></i>
+        </form>
+      </div>
+    
     <div class='menu navigation'>
       <div class='list-h'>
         
@@ -2634,14 +2545,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               
               active-action="action-archives">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f4f0.svg'><p>归档</p>
+              <i class='fa-solid fa-archive fa-fw'></i><p>归档</p>
             </a>
           
             <a target="_blank" rel="noopener" href="https://github.com/KrystenCollins/KrystenCollins.github.io"
               
               
               active-action="action-https:githubcomKrystenCollinsKrystenCollinsgithubio">
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/twemoji/assets/svg/1f9ec.svg'><p>源码</p>
+              <i class='fab fa-github fa-fw'></i><p>源码</p>
             </a>
           
         
@@ -2728,7 +2639,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day76/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -2794,7 +2705,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day75/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -2862,7 +2773,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day74/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -2928,7 +2839,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div>
           <a class='readmore' href='/p/leetcode/day73/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -3001,7 +2912,7 @@ dp[i][j]表示从下标为0~i的物品里任意取，放进容量为j的背包�
       
         <div>
           <a class='readmore' href='/p/leetcode/day72/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -3078,7 +2989,7 @@ dp[i][j]表示从下标为0~i的物品里任意取，放进容量为j的背包�
       
         <div>
           <a class='readmore' href='/p/leetcode/day71/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -3146,10 +3057,10 @@ dp[i][j]表示从下标为0~i的物品里任意取，放进容量为j的背包�
         <time itemprop="dateCreated datePublished" datetime="2024-06-13T00:00:00+08:00">2024-06-13</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/categories/leetcod/">leetcod</a>
+          <a class="category-link" href="/categories/leetcode/">leetcode</a>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/leetcod/" itemprop="url"><span itemprop="name">leetcod</span></a>
+              <a href="/categories/leetcode/" itemprop="url"><span itemprop="name">leetcode</span></a>
             </span>
           
         
@@ -3157,7 +3068,7 @@ dp[i][j]表示从下标为0~i的物品里任意取，放进容量为j的背包�
       
         <div>
           <a class='readmore' href='/p/leetcode/day70/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -3238,7 +3149,7 @@ dp数组如何初始化
       
         <div>
           <a class='readmore' href='/p/leetcode/day69/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -3321,7 +3232,7 @@ dp数组如何初始化
       
         <div>
           <a class='readmore' href='/p/leetcode/day68/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -3401,7 +3312,7 @@ dp数组如何初始化
       
         <div>
           <a class='readmore' href='/p/leetcode/day67/' itemprop="url">
-            阅读全文
+            Read More
           </a>
         </div>
       
@@ -3422,7 +3333,7 @@ dp数组如何初始化
         
           <a class="prev" rel="prev" href="/page/7/">
             <section class="post prev white-box shadow" >
-              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页&nbsp;
+              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>&nbsp;Previous&nbsp;
             </section>
           </a>
         
@@ -3432,7 +3343,7 @@ dp数组如何初始化
         
           <a class="next" rel="next" href="/page/9/">
             <section class="post next white-box shadow">
-              &nbsp;下一页&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+              &nbsp;Next&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
             </section>
           </a>
         
@@ -3533,19 +3444,14 @@ dp数组如何初始化
       <ul class="entry navigation">
         
           <li><a class="flat-box"
-            title="/categories/Test/" href="/categories/Test/"
-            active-action="action-categoriesTest"
-            ><div class='name'>Test</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/leetcod/" href="/categories/leetcod/"
-            active-action="action-categoriesleetcod"
-            ><div class='name'>leetcod</div><div class='badge'>(1)</div></a></li>
+            title="/categories/hello/" href="/categories/hello/"
+            active-action="action-categorieshello"
+            ><div class='name'>hello</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/leetcode/" href="/categories/leetcode/"
             active-action="action-categoriesleetcode"
-            ><div class='name'>leetcode</div><div class='badge'>(91)</div></a></li>
+            ><div class='name'>leetcode</div><div class='badge'>(93)</div></a></li>
         
       </ul>
     </div>
@@ -3632,7 +3538,7 @@ dp数组如何初始化
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/p/leetcode/day140/"><div class="item"><time>2026-03-18</time><span>Test</span></div><span>day140</span></a></li><li><a class="widget-last" href="/p/leetcode/day138/"><div class="item"><time>2024-09-18</time><span>leetcode</span></div><span>公交路线</span></a></li><li><a class="widget-last" href="/p/leetcode/day132/"><div class="item"><time>2024-09-12</time><span>leetcode</span></div><span>两个线段获得的最多奖品</span></a></li><li><a class="widget-last" href="/p/leetcode/day131/"><div class="item"><time>2024-09-12</time><span>leetcode</span></div><span>统计上升四元组</span></a></li><li><a class="widget-last" href="/p/leetcode/day133/"><div class="item"><time>2024-09-12</time><span>leetcode</span></div><span>求出最多标记下标</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/p/hello-world/"><div class="item"><time>2026-03-18</time><span>hello</span></div><span>Hello World</span></a></li><li><a class="widget-last" href="/p/leetcode/day140/"><div class="item"><time>2026-03-18</time><span>leetcode</span></div><span>day140</span></a></li><li><a class="widget-last" href="/p/leetcode/day70/"><div class="item"><time>2026-03-18</time><span>leetcode</span></div><span>不同路径</span></a></li><li><a class="widget-last" href="/p/leetcode/day138/"><div class="item"><time>2024-09-18</time><span>leetcode</span></div><span>公交路线</span></a></li><li><a class="widget-last" href="/p/leetcode/day132/"><div class="item"><time>2024-09-12</time><span>leetcode</span></div><span>两个线段获得的最多奖品</span></a></li></ul>
   </div>
 </section>
 
@@ -3681,14 +3587,14 @@ dp数组如何初始化
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -3747,7 +3653,7 @@ dp数组如何初始化
       
     
       
-        <div><p>博客内容遵循 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+        <div><p>Blog content follows the <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
 </div>
       
     
@@ -3759,9 +3665,9 @@ dp数组如何初始化
       
     
       
-        本站使用
+        Use
         <a href="https://github.com/volantis-x/hexo-theme-volantis/#5.8.0" target="_blank" class="codename">Volantis</a>
-        作为主题
+        as theme
       
     
       
